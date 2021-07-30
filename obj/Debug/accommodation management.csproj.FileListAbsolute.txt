@@ -1,0 +1,13 @@
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\bin\Debug\accommodation management.exe.config
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\bin\Debug\accommodation management.exe
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\bin\Debug\accommodation management.pdb
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation management.csproj.AssemblyReference.cache
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.Form1.resources
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.Form2.resources
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.Form3.resources
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.Form4.resources
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.Properties.Resources.resources
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation management.csproj.GenerateResource.cache
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation management.csproj.CoreCompileInputs.cache
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation management.exe
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation management.pdb
