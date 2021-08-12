@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace accommodation_management
 {
-    public partial class studentMainMenu : Form
+    public partial class wardenMainMenu : Form
     {
-        public studentMainMenu()
+        public wardenMainMenu()
         {
             InitializeComponent();
         }
 
-        private void studentMainMenu_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
@@ -27,16 +27,11 @@ namespace accommodation_management
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login returnstudent = new Login();
-            returnstudent.ShowDialog();
+            Login returnwarden = new Login();
+            returnwarden.ShowDialog();
         }
     }
 }

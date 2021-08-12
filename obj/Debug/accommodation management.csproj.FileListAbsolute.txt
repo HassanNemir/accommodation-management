@@ -25,3 +25,7 @@ C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation man
 C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation management.csproj.CoreCompileInputs.cache
 C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation management.exe
 C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation management.pdb
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.studentMainMenu.resources
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.Accommodation_Assignment_and_Change.resources
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.Accommodation_Termination.resources
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.wardenMainMenu.resources
