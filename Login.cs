@@ -26,5 +26,47 @@ namespace accommodation_management
         {
             Application.Exit();
         }
+
+        private void Usernameclick(object sender, EventArgs e)
+        {
+            textBox1.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            panel4.BackColor = SystemColors.Control;
+            textBox2.BackColor = SystemColors.Control;
+        }
+
+        private void Passwordclick(object sender, EventArgs e)
+        {
+            textBox1.BackColor = SystemColors.Control;
+            panel3.BackColor = SystemColors.Control;
+            panel4.BackColor = Color.White;
+            textBox2.BackColor = Color.White;
+        }
+
+        private void Passwordreview(object sender, MouseEventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = false;
+        }
+
+        private void Passwordconceal(object sender, MouseEventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = true;
+        }
+
+        private void taboutuser(object sender, EventArgs e)
+        {
+            textBox1.BackColor = SystemColors.Control;
+            panel3.BackColor = SystemColors.Control;
+            panel4.BackColor = Color.White;
+            textBox2.BackColor = Color.White;
+        }
+
+        private void taboutpass(object sender, EventArgs e)
+        {
+            textBox1.BackColor = SystemColors.Control;
+            panel3.BackColor = SystemColors.Control;
+            panel4.BackColor = SystemColors.Control;
+            textBox2.BackColor = SystemColors.Control;
+        }
     }
 }
