@@ -34,19 +34,22 @@ namespace accommodation_management
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(468, 333);
+            this.button1.Location = new System.Drawing.Point(702, 512);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 64);
+            this.button1.Size = new System.Drawing.Size(306, 98);
             this.button1.TabIndex = 0;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 491);
+            this.ClientSize = new System.Drawing.Size(1101, 755);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);

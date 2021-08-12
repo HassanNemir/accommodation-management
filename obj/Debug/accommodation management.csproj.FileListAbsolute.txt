@@ -25,3 +25,4 @@ C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation man
 C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation management.csproj.CoreCompileInputs.cache
 C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation management.exe
 C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation management.pdb
+C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.Login.resources

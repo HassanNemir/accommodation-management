@@ -16,5 +16,13 @@ namespace accommodation_management
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var studentMenu = new Form1();
+            var loginForum = new Login();
+            this.Hide();
+            studentMenu.Show();
+        }
     }
 }
