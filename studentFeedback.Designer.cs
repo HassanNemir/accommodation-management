@@ -1,7 +1,7 @@
 ﻿
 namespace accommodation_management
 {
-    partial class Form3
+    partial class studentFeedback
     {
         /// <summary>
         /// Required designer variable.
