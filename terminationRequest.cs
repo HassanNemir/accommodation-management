@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace accommodation_management
 {
-    public partial class Form3 : Form
+    public partial class terminationRequest : Form
     {
-        public Form3()
+        public terminationRequest()
         {
             InitializeComponent();
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
