@@ -19,7 +19,7 @@ namespace accommodation_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var studentMenu = new Form1();
+            var studentMenu = new accommodationRequest();
             var loginForum = new Login();
             this.Hide();
             studentMenu.Show();
