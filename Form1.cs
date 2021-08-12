@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace accommodation_management
 {
-    public partial class accommodationRequest : Form
+    public partial class Form1 : Form
     {
-        public accommodationRequest()
+        public Form1()
         {
             InitializeComponent();
         }

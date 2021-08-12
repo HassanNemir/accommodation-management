@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace accommodation_management
 {
-    public partial class studentFeedback : Form
+    public partial class Form4 : Form
     {
-        public studentFeedback()
+        public Form4()
         {
             InitializeComponent();
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
