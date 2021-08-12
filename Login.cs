@@ -19,7 +19,9 @@ namespace accommodation_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            studentMainMenu mainmenu = new studentMainMenu();
+            mainmenu.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -67,6 +69,11 @@ namespace accommodation_management
             panel3.BackColor = SystemColors.Control;
             panel4.BackColor = SystemColors.Control;
             textBox2.BackColor = SystemColors.Control;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
