@@ -53,53 +53,47 @@ namespace accommodation_management
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(84, 608);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(56, 395);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(309, 108);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(206, 70);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 26);
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(309, 171);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Location = new System.Drawing.Point(206, 111);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 26);
+            this.textBox2.Size = new System.Drawing.Size(121, 20);
             this.textBox2.TabIndex = 2;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(309, 49);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox3.Location = new System.Drawing.Point(206, 32);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 26);
+            this.textBox3.Size = new System.Drawing.Size(121, 20);
             this.textBox3.TabIndex = 3;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(309, 238);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox4.Location = new System.Drawing.Point(206, 155);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 26);
+            this.textBox4.Size = new System.Drawing.Size(121, 20);
             this.textBox4.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(80, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(53, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Student ID";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -107,72 +101,66 @@ namespace accommodation_management
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(80, 112);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(53, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 20);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Full Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(80, 175);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(53, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Email Address";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(80, 243);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(53, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 20);
+            this.label4.Size = new System.Drawing.Size(84, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Contact Number";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 306);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(53, 199);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 20);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Start Date";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(80, 372);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(53, 242);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 20);
+            this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "End Date";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(80, 435);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(53, 283);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 20);
+            this.label7.Size = new System.Drawing.Size(113, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "Accommodation Block";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(206, 608);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(137, 395);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 35);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 15;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox1
             // 
@@ -180,19 +168,19 @@ namespace accommodation_management
             this.comboBox1.Items.AddRange(new object[] {
             "Block A",
             "Block B"});
-            this.comboBox1.Location = new System.Drawing.Point(309, 431);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(206, 280);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 28);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 16;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(628, 49);
+            this.label8.Location = new System.Drawing.Point(419, 32);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 20);
+            this.label8.Size = new System.Drawing.Size(51, 13);
             this.label8.TabIndex = 17;
             this.label8.Text = "Block A";
             // 
@@ -200,37 +188,39 @@ namespace accommodation_management
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(628, 260);
+            this.label9.Location = new System.Drawing.Point(419, 169);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 20);
+            this.label9.Size = new System.Drawing.Size(51, 13);
             this.label9.TabIndex = 18;
             this.label9.Text = "Block B";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "";
-            this.dateTimePicker1.Location = new System.Drawing.Point(309, 300);
+            this.dateTimePicker1.Location = new System.Drawing.Point(206, 195);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker1.TabIndex = 19;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = "\"MM DD YYYY\"";
-            this.dateTimePicker2.Location = new System.Drawing.Point(309, 367);
+            this.dateTimePicker2.Location = new System.Drawing.Point(206, 239);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker2.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker2.TabIndex = 20;
             // 
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.MenuBar;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(632, 108);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.richTextBox1.Location = new System.Drawing.Point(421, 70);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(361, 84);
+            this.richTextBox1.Size = new System.Drawing.Size(241, 55);
             this.richTextBox1.TabIndex = 21;
             this.richTextBox1.Text = "Block A has a swimming pool, as well as a lounge for the block tenants. ";
             // 
@@ -238,10 +228,9 @@ namespace accommodation_management
             // 
             this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuBar;
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(632, 309);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.richTextBox2.Location = new System.Drawing.Point(421, 201);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(361, 84);
+            this.richTextBox2.Size = new System.Drawing.Size(241, 55);
             this.richTextBox2.TabIndex = 22;
             this.richTextBox2.Text = "Block B has a gym, study rooms, and a laundry room. The gym and study rooms are o" +
     "nly for the block tenants, while the laundry room is for the students from both " +
@@ -249,9 +238,9 @@ namespace accommodation_management
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.dateTimePicker2);
@@ -272,8 +261,8 @@ namespace accommodation_management
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "APU Accommodation | Student Accommodation Request";
             this.ResumeLayout(false);
             this.PerformLayout();

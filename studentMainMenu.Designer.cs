@@ -41,7 +41,7 @@ namespace accommodation_management
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(21, 88);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(254, 43);
             this.button1.TabIndex = 0;
@@ -52,22 +52,24 @@ namespace accommodation_management
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(21, 135);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(254, 43);
             this.button2.TabIndex = 1;
             this.button2.Text = "Change Room Request";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(21, 181);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(254, 43);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Change Room Request";
+            this.button3.Text = "Termination Request";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -127,7 +129,7 @@ namespace accommodation_management
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "studentMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accommodation Management | Student Main Menu";

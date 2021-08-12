@@ -19,12 +19,16 @@ namespace accommodation_management
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Accommodation_Termination Terminate = new Accommodation_Termination();
+            Terminate.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Accommodation_Assignment_and_Change Assign = new Accommodation_Assignment_and_Change();
+            Assign.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
