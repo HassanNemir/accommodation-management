@@ -19,9 +19,20 @@ namespace accommodation_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            studentMainMenu mainmenu = new studentMainMenu();
-            mainmenu.ShowDialog();
+            var email = textBox1.Text;
+            
+            if(email == "warden@accommodation.com")
+            {
+                this.Hide();
+                wardenMainMenu mainmenu = new wardenMainMenu();
+                mainmenu.ShowDialog();
+            } else
+            {
+                this.Hide();
+                studentMainMenu mainmenu = new studentMainMenu();
+                mainmenu.ShowDialog();
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
