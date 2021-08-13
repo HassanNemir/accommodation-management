@@ -1,0 +1,102 @@
+﻿StudentsID,Block,Room_Number,Room_Status,Full_Name,TP_Number,Contact_Number,Email,Password,Date_Entered,Date_Exit
+1,A,101,Occupied,Duncan Conner,TP056906,16671118-7572,id.risus.quis@placerat.edu,AQZ15HZX9QF,24/5/2021,1/10/2021
+2,A,102,Vacant,,,,,,,
+3,A,103,Vacant,,,,,,,
+4,A,104,Vacant,,,,,,,
+5,A,105,Occupied,Orson Wall,TP585537,16930701-2436,mollis.dui@consequat.org,NHS54OLL2MA,24/5/2021,1/10/2021
+6,A,106,Occupied,Fletcher Odom,TP893427,16740622-7806,non.lacinia@ipsumprimisin.org,ODN59LQT5KM,24/5/2021,1/10/2021
+7,A,107,Occupied,Harlan Cobb,TP397800,16870623-9814,laoreet.posuere@sapienmolestieorci.ca,GQI87LQQ3TY,24/5/2021,1/10/2021
+8,A,108,Vacant,,,,,,,
+9,A,109,Vacant,,,,,,,
+10,A,110,Vacant,,,,,,,
+11,A,201,Vacant,,,,,,,
+12,A,202,Vacant,,,,,,,
+13,A,203,Vacant,,,,,,,
+14,A,204,Vacant,,,,,,,
+15,A,205,Occupied,Hamish Montgomery,TP511831,16491127-2799,nulla.Cras.eu@Quisquetincidunt.org,CDM83QDU1ZG,24/5/2021,1/10/2021
+16,A,206,Vacant,,,,,,,
+17,A,207,Vacant,,,,,,,
+18,A,208,Occupied,Silas Garcia,TP876517,16440407-5568,Cras.eget@consectetuer.co.uk,FHR92QWE3EN,24/5/2021,1/10/2021
+19,A,209,Occupied,Nehru Smith,TP018809,16951229-4696,Etiam.ligula@Suspendissecommodotincidunt.edu,AFW65EKK0YZ,24/5/2021,1/10/2021
+20,A,210,Vacant,,,,,,,
+21,A,301,Vacant,,,,,,,
+22,A,302,Vacant,,,,,,,
+23,A,303,Vacant,,,,,,,
+24,A,304,Vacant,,,,,,,
+25,A,305,Vacant,,,,,,,
+26,A,306,Vacant,,,,,,,
+27,A,307,Occupied,Sean Dorsey,TP085611,16920517-2886,semper@vulputateullamcorpermagna.ca,MDL94DGE2YQ,24/5/2021,1/10/2021
+28,A,308,Occupied,James Hoover,TP082570,16800514-1901,a.scelerisque@nondui.ca,PQX78SVN5WR,24/5/2021,1/10/2021
+29,A,309,Occupied,Tanek Knight,TP004383,16731026-5447,dui.augue.eu@Maecenasmalesuada.org,KFZ29KIU4WJ,24/5/2021,1/10/2021
+30,A,310,Vacant,,,,,,,
+31,A,401,Vacant,,,,,,,
+32,A,402,Occupied,Peter Cline,TP226128,16690505-9702,ornare.lectus.ante@Vivamusnonlorem.com,VFT04GLI9TF,24/5/2021,1/10/2021
+33,A,403,Occupied,Harding Oneill,TP156430,16530108-5832,aliquam.eros@lobortisquis.ca,WWU35IKZ6QC,24/5/2021,1/10/2021
+34,A,404,Occupied,Fariz Hassan,TP062951,013-2521229,farizhassan99@gmail.com,Ihavenoidea99,24/5/2021,1/10/2021
+35,A,405,Occupied,Ross Oneil,TP001567,16121019-4252,massa@Seddiam.com,CUD23ULY2LT,24/5/2021,1/10/2021
+36,A,406,Occupied,Aidan Ruiz,TP678134,16281203-6933,Etiam.laoreet.libero@lobortisClassaptent.org,WMB67HSI6EB,24/5/2021,1/10/2021
+37,A,407,Occupied,Thane Soto,TP173873,16300605-1639,pharetra@uterosnon.edu,VUC45RFR0QT,24/5/2021,1/10/2021
+38,A,408,Occupied,Dante Bailey,TP209767,16660117-5901,Nulla@temporbibendumDonec.org,OMD58EQL8CR,24/5/2021,1/10/2021
+39,A,409,Vacant,,,,,,,
+40,A,410,Vacant,,,,,,,
+41,A,501,Vacant,,,,,,,
+42,A,502,Occupied,Dale Palmer,TP357863,16090825-3040,hendrerit.a@Quisqueimperdieterat.edu,HFM59GBQ4JS,24/5/2021,1/10/2021
+43,A,503,Occupied,Emmanuel Santiago,TP334281,16571220-4030,dolor.Nulla.semper@tristiquesenectus.edu,IZG48VJK4WS,24/5/2021,1/10/2021
+44,A,504,Vacant,,,,,,,
+45,A,505,Vacant,,,,,,,
+46,A,506,Vacant,,,,,,,
+47,A,507,Occupied,Ignatius Eaton,TP913975,16260315-2618,dolor.Donec.fringilla@molestiearcuSed.co.uk,SGA09WAY9AK,24/5/2021,1/10/2021
+48,A,508,Occupied,Arsenio Hyde,TP170238,16360621-4074,aliquet@Sed.net,HOO68UYO2SR,24/5/2021,1/10/2021
+49,A,509,Occupied,Galvin Sosa,TP092611,16871024-8066,ligula.elit.pretium@temporbibendum.co.uk,VOO74CEH4CE,24/5/2021,1/10/2021
+50,A,510,Occupied,Denton Lane,TP776537,16710411-0759,tincidunt.congue.turpis@maurisSuspendisse.net,WKG19WII9DR,24/5/2021,1/10/2021
+51,B,101,Occupied,Eugenia Kirkland,TP548254,16881003-2097,orci.luctus.et@dolor.com,MWQ64UNG6IX,24/5/2021,1/10/2021
+52,B,102,Occupied,Astra Scott,TP984262,16110917-4290,sed.dolor@justo.edu,EXN04DSE0IQ,24/5/2021,1/10/2021
+53,B,103,Vacant,,,,,,,
+54,B,104,Vacant,,,,,,,
+55,B,105,Vacant,,,,,,,
+56,B,106,Vacant,,,,,,,
+57,B,107,Vacant,,,,,,,
+58,B,108,Vacant,,,,,,,
+59,B,109,Vacant,,,,,,,
+60,B,110,Vacant,,,,,,,
+61,B,201,Occupied,Cameran Boyd,TP486592,16130929-3072,nunc.risus@Donec.org,ALI21JCO2GP,24/5/2021,1/10/2021
+62,B,202,Occupied,Emi Callahan,TP625455,16090926-8427,fringilla@mollisInteger.co.uk,LQO31AMJ1LS,24/5/2021,1/10/2021
+63,B,203,Occupied,Sacha Zamora,TP787174,16081225-9331,malesuada.fames.ac@senectusetnetus.edu,NXU26NUP1PS,24/5/2021,1/10/2021
+64,B,204,Occupied,Veda Mcfarland,TP187720,16120620-4958,fermentum.fermentum@idsapien.co.uk,ZPM86VMS7HY,24/5/2021,1/10/2021
+65,B,205,Vacant,,,,,,,
+66,B,206,Vacant,,,,,,,
+67,B,207,Vacant,,,,,,,
+68,B,208,Vacant,,,,,,,
+69,B,209,Occupied,Gay Walter,TP163733,16660529-4294,vel@lorem.net,EJA40WWJ4SY,24/5/2021,1/10/2021
+70,B,210,Occupied,Athena Farmer,TP944435,16700526-8359,per.conubia@mus.net,YGW53RWB6JG,24/5/2021,1/10/2021
+71,B,301,Vacant,,,,,,,
+72,B,302,Occupied,MacKensie Maldonado,TP463270,16751004-5730,risus.quis.diam@mifelis.co.uk,XIT81IXA5RQ,24/5/2021,1/10/2021
+73,B,303,Occupied,Wynne Alvarez,TP530294,16460326-4427,dolor.elit@ipsum.net,UTG53FIA4CV,24/5/2021,1/10/2021
+74,B,304,Occupied,Lavinia Tillman,TP492829,16550128-4649,sed.leo.Cras@Nuncullamcorper.com,LUA45NTS5VY,24/5/2021,1/10/2021
+75,B,305,Occupied,Lavinia Best,TP788527,16880408-7081,Donec.nibh@nectempus.edu,CTD91AMW5BJ,24/5/2021,1/10/2021
+76,B,306,Occupied,Ann Stewart,TP004915,16551018-3352,aliquet@velit.co.uk,FYA61WHV7GU,24/5/2021,1/10/2021
+77,B,307,Occupied,Ruth Velez,TP601682,16820430-9101,enim@felis.edu,PMC20QRB7HG,24/5/2021,1/10/2021
+78,B,308,Vacant,,,,,,,
+79,B,309,Vacant,,,,,,,
+80,B,310,Occupied,Joy Gordon,TP043978,16830226-9728,vitae.purus.gravida@Proinultrices.org,GPF85LBJ3UY,24/5/2021,1/10/2021
+81,B,401,Occupied,Isabella Richards,TP723318,16071110-3929,sed.consequat@Phasellusdapibus.org,KAC04KDF3DN,24/5/2021,1/10/2021
+82,B,402,Occupied,Nerea Rivers,TP603850,16420829-5206,non.lobortis@sapienNuncpulvinar.com,LRY17QFR1YW,24/5/2021,1/10/2021
+83,B,403,Vacant,,,,,,,
+84,B,404,Occupied,Genevieve Cooley,TP527670,16890624-4572,malesuada@facilisismagnatellus.org,ZTO68YXS5ZH,24/5/2021,1/10/2021
+85,B,405,Vacant,,,,,,,
+86,B,406,Occupied,Cara Quinn,TP953798,16380916-4159,non.dapibus.rutrum@primis.org,XGC37OKA6MM,24/5/2021,1/10/2021
+87,B,407,Occupied,Myra Burton,TP362139,16670515-0305,malesuada@erosProin.ca,GJW42VYQ6ML,24/5/2021,1/10/2021
+88,B,408,Occupied,Aiko Holland,TP476623,16610801-9925,luctus.et@ipsumPhasellusvitae.org,QEQ13BBE2PC,24/5/2021,1/10/2021
+89,B,409,Occupied,Selma Harrington,TP628758,16790615-0334,facilisis@acipsumPhasellus.ca,DGI53XFU0KL,24/5/2021,1/10/2021
+90,B,410,Vacant,,,,,,,
+91,B,501,Vacant,,,,,,,
+92,B,502,Occupied,Raven Landry,TP895471,16320112-2391,feugiat@liberoMorbiaccumsan.edu,RXK01UXK3IS,24/5/2021,1/10/2021
+93,B,503,Occupied,Hadassah Ford,TP162300,16741009-4416,metus@penatibusetmagnis.org,IZU96KFP4PY,24/5/2021,1/10/2021
+94,B,504,Occupied,Ima Morin,TP308536,16200502-1635,libero@necquamCurabitur.net,NHA12ZSU1QS,24/5/2021,1/10/2021
+95,B,505,Occupied,Laura Mooney,TP319748,16060608-1859,tellus@mollis.org,BCO51IPF5XH,24/5/2021,1/10/2021
+96,B,506,Vacant,,,,,,,
+97,B,507,Vacant,,,,,,,
+98,B,508,Occupied,Naida Watts,TP812443,16211106-4008,mauris.ut@nectempus.com,FTB91CEC0GA,24/5/2021,1/10/2021
+99,B,509,Occupied,Alexis Witt,TP086318,16171016-7758,ullamcorper@elementum.ca,KWO03BPZ1TK,24/5/2021,1/10/2021
+100,B,510,Occupied,Chanda Watson,TP321290,16730404-6118,Maecenas.mi.felis@lectus.org,GVE44YMU1NH,24/5/2021,1/10/2021
+,,,,WARDEN,WARDEN,,admin,admin,,
