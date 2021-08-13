@@ -16,12 +16,5 @@ namespace accommodation_management
         {
             InitializeComponent();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            wardenMainMenu returnmenu = new wardenMainMenu();
-            returnmenu.ShowDialog();
-        }
     }
 }
