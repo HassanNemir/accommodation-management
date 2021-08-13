@@ -58,29 +58,29 @@
     <Compile Include="Accommodation Termination.Designer.cs">
       <DependentUpon>Accommodation Termination.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="studentAccommodationRequest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="studentAccommodationRequest.Designer.cs">
+      <DependentUpon>studentAccommodationRequest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="studentRoomChangeRequest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="studentRoomChangeRequest.Designer.cs">
+      <DependentUpon>studentRoomChangeRequest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="studentFeedback.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="studentFeedback.Designer.cs">
+      <DependentUpon>studentFeedback.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="studentTerminationRequest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="studentTerminationRequest.Designer.cs">
+      <DependentUpon>studentTerminationRequest.cs</DependentUpon>
     </Compile>
     <Compile Include="studentMainMenu.cs">
       <SubType>Form</SubType>
@@ -108,17 +108,17 @@
     <EmbeddedResource Include="Accommodation Termination.resx">
       <DependentUpon>Accommodation Termination.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="studentAccommodationRequest.resx">
+      <DependentUpon>studentAccommodationRequest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="studentRoomChangeRequest.resx">
+      <DependentUpon>studentRoomChangeRequest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="studentFeedback.resx">
+      <DependentUpon>studentFeedback.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="studentTerminationRequest.resx">
+      <DependentUpon>studentTerminationRequest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

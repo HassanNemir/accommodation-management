@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace accommodation_management
 {
-    public partial class Form4 : Form
+    public partial class studentRoomChangeRequest : Form
     {
-        public Form4()
+        public studentRoomChangeRequest()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button2_Click(object sender, EventArgs e)

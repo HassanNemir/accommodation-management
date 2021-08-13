@@ -25,7 +25,7 @@ namespace accommodation_management
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 accommodationreq = new Form1();
+            studentAccommodationRequest accommodationreq = new studentAccommodationRequest();
             accommodationreq.ShowDialog();
         }
 
@@ -44,14 +44,14 @@ namespace accommodation_management
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 accommodationchg = new Form2();
+            studentRoomChangeRequest accommodationchg = new studentRoomChangeRequest();
             accommodationchg.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form4 accommodationterminate = new Form4();
+            studentTerminationRequest accommodationterminate = new studentTerminationRequest();
             accommodationterminate.ShowDialog();
         }
     }
