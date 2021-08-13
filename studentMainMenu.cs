@@ -54,5 +54,12 @@ namespace accommodation_management
             studentTerminationRequest accommodationterminate = new studentTerminationRequest();
             accommodationterminate.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            studentFeedback studentFeedback = new studentFeedback();
+            studentFeedback.ShowDialog();
+        }
     }
 }
