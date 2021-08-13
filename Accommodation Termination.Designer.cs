@@ -105,7 +105,7 @@ namespace accommodation_management
             this.Controls.Add(this.comboBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Accommodation_Termination";
-            this.Text = "Accommodation_Termination";
+            this.Text = "Warden | Accommodation termination";
             this.ResumeLayout(false);
             this.PerformLayout();
 

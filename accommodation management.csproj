@@ -58,6 +58,12 @@
     <Compile Include="Accommodation Termination.Designer.cs">
       <DependentUpon>Accommodation Termination.cs</DependentUpon>
     </Compile>
+    <Compile Include="wardenFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wardenFeedback.Designer.cs">
+      <DependentUpon>wardenFeedback.cs</DependentUpon>
+    </Compile>
     <Compile Include="studentAccommodationRequest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </Compile>
     <EmbeddedResource Include="studentMainMenu.resx">
       <DependentUpon>studentMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wardenFeedback.resx">
+      <DependentUpon>wardenFeedback.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wardenMainMenu.resx">
       <DependentUpon>wardenMainMenu.cs</DependentUpon>
