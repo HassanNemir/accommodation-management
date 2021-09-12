@@ -9,6 +9,7 @@ namespace accommodation_management
     class AccommodationBooking
     {
         private string bookingID;
+        private string type;
         private string wardenID;
         private string studentID;
         private DateTime startDate;
@@ -27,6 +28,7 @@ namespace accommodation_management
              * set values
              */
             this.studentID = studentID;
+            this.type = "booking";
             this.startDate = startDate;
             this.endDate = endDate;
             this.block = block;
@@ -41,6 +43,18 @@ namespace accommodation_management
              * compute duration in days
              */
             this.duration = (endDate - startDate).Days;
+        }
+
+        public void accommodationTerminationRequest (string studentID, DateTime terminationDate)
+        {
+            /**
+             * validate data
+             */
+            /**
+             * store termination request in accommodation info
+             */
+            this.type = "termination";
+            this.studentID = studentID;
         }
     }
 }
