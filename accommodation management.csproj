@@ -58,6 +58,7 @@
     <Compile Include="Accommodation Termination.Designer.cs">
       <DependentUpon>Accommodation Termination.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccommodationBooking.cs" />
     <Compile Include="wardenFeedback.cs">
       <SubType>Form</SubType>
     </Compile>

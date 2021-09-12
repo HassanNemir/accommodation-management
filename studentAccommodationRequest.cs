@@ -12,6 +12,7 @@ namespace accommodation_management
 {
     public partial class studentAccommodationRequest : Form
     {
+        AccommodationBooking studentBooking;
         public studentAccommodationRequest()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace accommodation_management
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
-            dateTimePicker1.CustomFormat = "MMMM dd yyyy";
+            startDate.CustomFormat = "MMMM dd yyyy";
 
 
         }
@@ -35,6 +36,16 @@ namespace accommodation_management
             this.Hide();
             studentMainMenu returnmenu = new studentMainMenu();
             returnmenu.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            studentBooking = new AccommodationBooking(studentID.Text, startDate.Value, endDate.Value, block.Text);
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
