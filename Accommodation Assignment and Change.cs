@@ -23,5 +23,18 @@ namespace accommodation_management
             wardenMainMenu returnmenu = new wardenMainMenu();
             returnmenu.ShowDialog();
         }
+
+        private void studentIDList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Accommodation_Assignment_and_Change_Load(object sender, EventArgs e)
+        {
+            string[] test = new string[2];
+            test[0] = "hello";
+            test[1] = "hey";
+            studentIDList.Items.AddRange(test);
+        }
     }
 }
