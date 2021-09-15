@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace accommodation_management
 {
@@ -19,9 +20,30 @@ namespace accommodation_management
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string connectString;
+            string sqlQuery;
+            // change "AttachDbFilename" to the path of the .mdf file on your computer
+            connectString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =C:\Users\hasan\OneDrive\Documents\accommodation-management\acm.mdf; Integrated Security = True";
+            SqlCommand cmd = new SqlCommand();
+            SqlConnection conn = new SqlConnection(connectString);
+
             var email = textBox1.Text;
-            
-            if(email == "warden@accommodation.com")
+            // here we build the query for looking for a student or warden
+            sqlQuery = $"Select * from Users where Username='{textBox1.Text}' AND Password='{textBox2.Text}'";
+            cmd = new SqlCommand(sqlQuery, conn);
+            SqlDataReader dr;
+            // this should have the data from the db
+            dr = cmd.ExecuteReader();
+
+            // dr has the data that we should use to login the user
+
+
+            // closing the connection
+            dr.Close();
+
+            conn.Close();
+
+            if (email == "warden@accommodation.com")
             {
                 this.Hide();
                 wardenMainMenu mainmenu = new wardenMainMenu();
