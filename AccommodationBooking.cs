@@ -43,6 +43,9 @@ namespace accommodation_management
              * compute duration in days
              */
             this.duration = (endDate - startDate).Days;
+            Utilities utils = new Utilities();
+            string query = $"INSERT INTO AccommodationBooking (bookingID, studentID, wardenID, type, startDate, endDate, duration, status, block) VALUES ({this.bookingID}, {this.studentID}, {this.wardenID},  { this.type}, { this.startDate}, { this.endDate}, { this.duration}, { this.status}, { this.block}) ";
+            utils.SqlQuery(query);
         }
 
         public void accommodationTerminationRequest (string studentID, DateTime terminationDate)

@@ -23,13 +23,13 @@ namespace accommodation_management
             string connectString;
             string sqlQuery;
             // change "AttachDbFilename" to the path of the .mdf file on your computer
-            connectString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =C:\Users\hasan\OneDrive\Documents\accommodation-management\acm.mdf; Integrated Security = True";
+            connectString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\hasan\OneDrive\Documents\accommodation-management\acm.mdf; Integrated Security = True";
             SqlCommand cmd = new SqlCommand();
             SqlConnection conn = new SqlConnection(connectString);
-
+            conn.Open();
             var email = textBox1.Text;
             // here we build the query for looking for a student or warden
-            sqlQuery = $"Select * from Users where Username='{textBox1.Text}' AND Password='{textBox2.Text}'";
+            sqlQuery = $"Select * from students where email='{textBox1.Text}' AND password='{textBox2.Text}'";
             cmd = new SqlCommand(sqlQuery, conn);
             SqlDataReader dr;
             // this should have the data from the db
