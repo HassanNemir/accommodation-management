@@ -18,6 +18,11 @@ namespace accommodation_management
         private string status;
         private int duration;
         private string block;
+        private string terminationReason;
+        public AccommodationBooking()
+        {
+
+        }
 
         public AccommodationBooking (string studentID, DateTime startDate, DateTime endDate, string block)
         {
@@ -54,8 +59,11 @@ namespace accommodation_management
             utils.SqlQuery(query);
         }
 
-        public void accommodationTerminationRequest (string studentID, DateTime terminationDate)
+        public void accommodationTerminationRequest (string studentID, DateTime terminationDate, string terminationReason)
         {
+            this.bookingDate = DateTime.Now;
+            string timestamp = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds().ToString();
+            this.bookingID = "t" + timestamp;
             /**
              * validate data
              */
@@ -63,6 +71,7 @@ namespace accommodation_management
              * store termination request in accommodation info
              */
             this.type = "termination";
+            this.terminationReason = terminationReason;
             this.studentID = studentID;
         }
     }

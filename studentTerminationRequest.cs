@@ -23,5 +23,16 @@ namespace accommodation_management
             studentMainMenu returnmenu = new studentMainMenu();
             returnmenu.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AccommodationBooking studentBooking = new AccommodationBooking();
+            studentBooking.accommodationTerminationRequest(studentID.Text, TerminationDate.Value, terminationreason.Text);
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

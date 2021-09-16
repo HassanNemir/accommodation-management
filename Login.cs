@@ -56,7 +56,6 @@ namespace accommodation_management
                  MessageBox.Show("Incorrect email or password. Please retry.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e)
