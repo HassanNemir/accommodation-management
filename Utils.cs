@@ -1,28 +1,31 @@
 ﻿using System;
 using System.Data.SqlClient;
 
-public class Utilities
+namespace accommodation_management
 {
-    public SqlDataReader SqlQuery (string query)
+    public class Utilities
     {
-        string connectString;
-        // change "AttachDbFilename" to the path of the .mdf file on your computer
-        connectString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =C:\Users\hasan\OneDrive\Documents\accommodation-management\acm.mdf; Integrated Security = True";
-        SqlCommand cmd = new SqlCommand();
-        SqlConnection conn = new SqlConnection(connectString);
-        conn.Open();
-        cmd = new SqlCommand(query, conn);
-        SqlDataReader dr;
-        // this should have the data from the db
-        dr = cmd.ExecuteReader();
+        public SqlDataReader SqlQuery(string query)
+        {
+            string connectString;
+            // change "AttachDbFilename" to the path of the .mdf file on your computer
+            connectString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =C:\Users\hasan\OneDrive\Documents\accommodation-management\acm.mdf; Integrated Security = True";
+            SqlCommand cmd = new SqlCommand();
+            SqlConnection conn = new SqlConnection(connectString);
+            conn.Open();
+            cmd = new SqlCommand(query, conn);
+            SqlDataReader dr;
+            // this should have the data from the db
+            dr = cmd.ExecuteReader();
 
-        // dr has the data that we should use to login the user
+            // dr has the data that we should use to login the user
 
 
-        // closing the connection
-        dr.Close();
+            // closing the connection
+            dr.Close();
 
-        conn.Close();
-        return dr;
+            conn.Close();
+            return dr;
+        }
     }
 }

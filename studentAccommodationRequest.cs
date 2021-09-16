@@ -41,6 +41,8 @@ namespace accommodation_management
         private void button1_Click(object sender, EventArgs e)
         {
             studentBooking = new AccommodationBooking(studentID.Text, startDate.Value, endDate.Value, block.Text);
+            // @TODO add a confirmation message on submission
+            // @TODO add validations
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
