@@ -20,41 +20,43 @@ namespace accommodation_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connectString;
-            string sqlQuery;
-            // change "AttachDbFilename" to the path of the .mdf file on your computer
-            connectString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\hasan\OneDrive\Documents\accommodation-management\acm.mdf; Integrated Security = True";
-            SqlCommand cmd = new SqlCommand();
-            SqlConnection conn = new SqlConnection(connectString);
-            conn.Open();
+            Utilities utils = new Utilities();
+
+            /**
+             * Insert values in accommodationBooking table
+             */
+            string query = $"Select * from students where email='{textBox1.Text}' AND password='{textBox2.Text}'";
+            utils.SqlQuery(query);
             var email = textBox1.Text;
-            // here we build the query for looking for a student or warden
-            sqlQuery = $"Select * from students where email='{textBox1.Text}' AND password='{textBox2.Text}'";
-            cmd = new SqlCommand(sqlQuery, conn);
-            SqlDataReader dr;
             // this should have the data from the db
-            dr = cmd.ExecuteReader();
-
+            SqlDataReader dr = utils.SqlQuery(query);
             // dr has the data that we should use to login the user
+            if (dr.HasRows)
 
-
-            // closing the connection
-            dr.Close();
-
-            conn.Close();
-
-            if (email == "warden@accommodation.com")
             {
-                this.Hide();
-                wardenMainMenu mainmenu = new wardenMainMenu();
-                mainmenu.ShowDialog();
-            } else
-            {
+                MessageBox.Show("You have logged in successfully", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 studentMainMenu mainmenu = new studentMainMenu();
                 mainmenu.ShowDialog();
             }
-            
+            else
+            {
+                string Wquery = $"Select * from warden where email='{textBox1.Text}' AND password='{textBox2.Text}'";
+                utils.SqlQuery(Wquery);
+                SqlDataReader Wdr = utils.SqlQuery(Wquery);
+                if (Wdr.HasRows)
+                {
+                    MessageBox.Show("You have logged in successfully", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    wardenMainMenu Wmainmenu = new wardenMainMenu();
+                    Wmainmenu.ShowDialog();
+                }
+                else
+                {
+                 MessageBox.Show("Incorrect email or password. Please retry.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
