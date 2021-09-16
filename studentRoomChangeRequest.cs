@@ -28,5 +28,15 @@ namespace accommodation_management
             studentMainMenu returnmenu = new studentMainMenu();
             returnmenu.ShowDialog();
         }
+
+        private void studentRoomChangeRequest_Load(object sender, EventArgs e)
+        {
+            studentRoomChangeRequest studentBooking = new studentRoomChangeRequest();
+            studentBooking.AccommodationChangeRequest(studentIDChange.Text, radioA.Checked, radioB.Checked);
+            MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            studentMainMenu mainmenu = new studentMainMenu();
+            mainmenu.ShowDialog();
+        }
     }
 }
