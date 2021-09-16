@@ -41,6 +41,10 @@ namespace accommodation_management
         private void button1_Click(object sender, EventArgs e)
         {
             studentBooking = new AccommodationBooking(studentID.Text, startDate.Value, endDate.Value, block.Text);
+            MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            studentMainMenu mainmenu = new studentMainMenu();
+            mainmenu.ShowDialog();
             // @TODO add a confirmation message on submission
             // @TODO add validations
         }

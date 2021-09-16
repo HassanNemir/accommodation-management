@@ -28,6 +28,10 @@ namespace accommodation_management
         {
             AccommodationBooking studentBooking = new AccommodationBooking();
             studentBooking.accommodationTerminationRequest(studentID.Text, TerminationDate.Value, terminationreason.Text);
+            MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            studentMainMenu mainmenu = new studentMainMenu();
+            mainmenu.ShowDialog();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
