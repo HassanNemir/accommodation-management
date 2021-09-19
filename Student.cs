@@ -26,7 +26,7 @@ namespace accommodation_management
             get { return studentID; }
         }
 
-        public void terminateStudentAccommodation (string studentID)
+        public void terminateStudentAccommodation(string studentID)
         {
             Utilities utils = new Utilities();
             string query1 = $"UPDATE students SET roomNumber=Null WHERE studentID='{studentID}';";

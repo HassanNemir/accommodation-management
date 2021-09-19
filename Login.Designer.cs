@@ -189,18 +189,7 @@ namespace accommodation_management
             this.panel2.Size = new System.Drawing.Size(684, 815);
             this.panel2.TabIndex = 7;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.linkLabel1.Location = new System.Drawing.Point(260, 742);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(211, 20);
-            this.linkLabel1.TabIndex = 13;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Tp062951@mail.apu.edu.my";
+
             // 
             // label9
             // 
@@ -213,7 +202,6 @@ namespace accommodation_management
             this.label9.Size = new System.Drawing.Size(205, 20);
             this.label9.TabIndex = 12;
             this.label9.Text = "please submit an email to: Tp062951@mail.apu.edu.my";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -238,21 +226,6 @@ namespace accommodation_management
             this.label7.Size = new System.Drawing.Size(72, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "Support:";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(286, 460);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(244, 54);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Forgot your password?";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
