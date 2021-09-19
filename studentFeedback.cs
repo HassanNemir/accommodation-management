@@ -12,6 +12,7 @@ namespace accommodation_management
 {
     public partial class studentFeedback : Form
     {
+        Feedback stFeedback; 
         public studentFeedback()
         {
             InitializeComponent();
@@ -27,6 +28,16 @@ namespace accommodation_management
             this.Hide();
             studentMainMenu returnmenu = new studentMainMenu();
             returnmenu.ShowDialog();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+         
+        private void button1_Click(object sender, EventArgs e)
+        {
+            stFeedback = new Feedback(studentID.Text, subject.Text, feedback.Text);
         }
     }
 }

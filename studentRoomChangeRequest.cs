@@ -12,6 +12,7 @@ namespace accommodation_management
 {
     public partial class studentRoomChangeRequest : Form
     {
+        string selectedText;
         public studentRoomChangeRequest()
         {
             InitializeComponent();
@@ -27,6 +28,34 @@ namespace accommodation_management
             this.Hide();
             studentMainMenu returnmenu = new studentMainMenu();
             returnmenu.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            AccommodationBooking studentBooking = new AccommodationBooking();
+            Console.WriteLine("aa {0}", selectedText);
+
+            studentBooking.changeRoomRequest(studentID.Text, selectedText);
+            MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            studentMainMenu mainmenu = new studentMainMenu();
+            mainmenu.ShowDialog();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void block_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedText = block.Text;
+        }
+
+        private void studentRoomChangeRequest_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -128,6 +128,7 @@ namespace accommodation_management
             this.block.Name = "block";
             this.block.Size = new System.Drawing.Size(180, 28);
             this.block.TabIndex = 16;
+            this.block.SelectedIndexChanged += new System.EventHandler(this.block_SelectedIndexChanged);
             // 
             // label8
             // 

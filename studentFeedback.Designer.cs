@@ -30,63 +30,50 @@ namespace accommodation_management
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.studentID = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.feedback = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.subject = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(65, 371);
+            this.button1.Location = new System.Drawing.Point(98, 571);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(112, 35);
             this.button1.TabIndex = 0;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(177, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 67);
+            this.label1.Location = new System.Drawing.Point(93, 103);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Student ID";
             // 
-            // textBox2
+            // studentID
             // 
-            this.textBox2.Location = new System.Drawing.Point(177, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Full Name";
+            this.studentID.Location = new System.Drawing.Point(266, 98);
+            this.studentID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.studentID.Name = "studentID";
+            this.studentID.Size = new System.Drawing.Size(148, 26);
+            this.studentID.TabIndex = 3;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(146, 371);
+            this.button2.Location = new System.Drawing.Point(219, 571);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(112, 35);
             this.button2.TabIndex = 5;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
@@ -95,57 +82,55 @@ namespace accommodation_management
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 248);
+            this.label3.Location = new System.Drawing.Point(93, 269);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Feedback";
             // 
-            // richTextBox1
+            // feedback
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(177, 248);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(242, 56);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
+            this.feedback.Location = new System.Drawing.Point(266, 266);
+            this.feedback.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.feedback.Name = "feedback";
+            this.feedback.Size = new System.Drawing.Size(361, 84);
+            this.feedback.TabIndex = 8;
+            this.feedback.Text = "";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 186);
+            this.label4.Location = new System.Drawing.Point(93, 174);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Subject";
             // 
-            // comboBox1
+            // subject
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Complain",
-            "Request",
-            "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(177, 184);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 17;
+            this.subject.Location = new System.Drawing.Point(266, 168);
+            this.subject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.subject.Name = "subject";
+            this.subject.Size = new System.Drawing.Size(148, 26);
+            this.subject.TabIndex = 10;
             // 
-            // Form3
+            // studentFeedback
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.subject);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.feedback);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.studentID);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Name = "Form3";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "studentFeedback";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "APU Accommodation | Student Feedback";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -157,14 +142,12 @@ namespace accommodation_management
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox studentID;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox feedback;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox subject;
     }
 }

@@ -41,7 +41,6 @@ namespace accommodation_management
             // 
             // button1
             // 
-            this.button1.Enabled = false;
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.button1.Location = new System.Drawing.Point(32, 135);
             this.button1.Name = "button1";

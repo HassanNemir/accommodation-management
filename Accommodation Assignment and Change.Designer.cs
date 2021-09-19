@@ -30,94 +30,109 @@ namespace accommodation_management
         private void InitializeComponent()
         {
             this.studentIDList = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.studentName = new System.Windows.Forms.Label();
+            this.prevRoomNumber = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.roomNumber = new System.Windows.Forms.TextBox();
+            this.requestedBlock = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // studentIDList
             // 
             this.studentIDList.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentIDList.FormattingEnabled = true;
-            this.studentIDList.Location = new System.Drawing.Point(117, 65);
-            this.studentIDList.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.studentIDList.Location = new System.Drawing.Point(88, 52);
+            this.studentIDList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.studentIDList.Name = "studentIDList";
-            this.studentIDList.Size = new System.Drawing.Size(1359, 56);
+            this.studentIDList.Size = new System.Drawing.Size(1020, 45);
             this.studentIDList.TabIndex = 0;
             this.studentIDList.Text = "List of Student ID";
             this.studentIDList.SelectedIndexChanged += new System.EventHandler(this.studentIDList_SelectedIndexChanged);
             // 
-            // label1
+            // studentName
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(117, 171);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1371, 44);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Student Name";
+            this.studentName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.studentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentName.Location = new System.Drawing.Point(88, 126);
+            this.studentName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.studentName.Name = "studentName";
+            this.studentName.Size = new System.Drawing.Size(1028, 35);
+            this.studentName.TabIndex = 1;
+            this.studentName.Text = "Student Name";
             // 
-            // label2
+            // prevRoomNumber
             // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(117, 246);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(428, 46);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Previous Room Number";
+            this.prevRoomNumber.AutoSize = true;
+            this.prevRoomNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.prevRoomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prevRoomNumber.Location = new System.Drawing.Point(333, 194);
+            this.prevRoomNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.prevRoomNumber.Name = "prevRoomNumber";
+            this.prevRoomNumber.Size = new System.Drawing.Size(329, 35);
+            this.prevRoomNumber.TabIndex = 2;
+            this.prevRoomNumber.Text = "Previous Room Number";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1283, 246);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button1.Location = new System.Drawing.Point(775, 615);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 72);
+            this.button1.Size = new System.Drawing.Size(154, 58);
             this.button1.TabIndex = 4;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1283, 769);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button2.Location = new System.Drawing.Point(962, 615);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(205, 72);
+            this.button2.Size = new System.Drawing.Size(154, 58);
             this.button2.TabIndex = 5;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
+            // roomNumber
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(627, 244);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 44);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "New Room Number";
+            this.roomNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.roomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomNumber.Location = new System.Drawing.Point(670, 196);
+            this.roomNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.roomNumber.Name = "roomNumber";
+            this.roomNumber.Size = new System.Drawing.Size(240, 35);
+            this.roomNumber.TabIndex = 3;
+            this.roomNumber.Text = "New Room Number";
+            // 
+            // requestedBlock
+            // 
+            this.requestedBlock.AutoSize = true;
+            this.requestedBlock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.requestedBlock.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.requestedBlock.Location = new System.Drawing.Point(88, 194);
+            this.requestedBlock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.requestedBlock.Name = "requestedBlock";
+            this.requestedBlock.Size = new System.Drawing.Size(237, 35);
+            this.requestedBlock.TabIndex = 6;
+            this.requestedBlock.Text = "Requested Block";
             // 
             // Accommodation_Assignment_and_Change
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.requestedBlock);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.roomNumber);
+            this.Controls.Add(this.prevRoomNumber);
+            this.Controls.Add(this.studentName);
             this.Controls.Add(this.studentIDList);
-            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Accommodation_Assignment_and_Change";
             this.Text = "Warden | Change and assign accommodation";
             this.Load += new System.EventHandler(this.Accommodation_Assignment_and_Change_Load);
@@ -129,10 +144,11 @@ namespace accommodation_management
         #endregion
 
         private System.Windows.Forms.ComboBox studentIDList;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label studentName;
+        private System.Windows.Forms.Label prevRoomNumber;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox roomNumber;
+        private System.Windows.Forms.Label requestedBlock;
     }
 }

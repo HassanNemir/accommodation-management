@@ -40,16 +40,28 @@ namespace accommodation_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            studentBooking = new AccommodationBooking(studentID.Text, startDate.Value, endDate.Value, block.Text);
-            MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Hide();
-            studentMainMenu mainmenu = new studentMainMenu();
-            mainmenu.ShowDialog();
+            try
+            {
+                studentBooking = new AccommodationBooking(studentID.Text, startDate.Value, endDate.Value, block.Text);
+                MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                studentMainMenu mainmenu = new studentMainMenu();
+                mainmenu.ShowDialog();
+            } 
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             // @TODO add a confirmation message on submission
             // @TODO add validations
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void block_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -26,9 +26,10 @@ namespace accommodation_management
 
 
             // closing the connection
-            dr.Close();
+            // dr.Close();
 
-            conn.Close();
+            //conn.Close();
+            dr.Read();
             return dr;
         }
     }
