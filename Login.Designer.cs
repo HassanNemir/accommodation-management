@@ -39,11 +39,9 @@ namespace accommodation_management
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -177,11 +175,9 @@ namespace accommodation_management
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.panel3);
@@ -216,7 +212,8 @@ namespace accommodation_management
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(205, 20);
             this.label9.TabIndex = 12;
-            this.label9.Text = "please submit an email to:";
+            this.label9.Text = "please submit an email to: Tp062951@mail.apu.edu.my";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -395,9 +392,7 @@ namespace accommodation_management
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
