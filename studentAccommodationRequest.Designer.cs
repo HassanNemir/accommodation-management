@@ -214,6 +214,7 @@ namespace accommodation_management
             this.Name = "studentAccommodationRequest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "APU Accommodation | Student Accommodation Request";
+            this.Load += new System.EventHandler(this.studentAccommodationRequest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

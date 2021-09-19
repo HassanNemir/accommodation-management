@@ -34,8 +34,8 @@ namespace accommodation_management
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentMainMenu returnmenu = new studentMainMenu();
-            returnmenu.ShowDialog();
+            // studentMainMenu returnmenu = new studentMainMenu();
+            //return menu.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,8 +45,8 @@ namespace accommodation_management
                 studentBooking = new AccommodationBooking(studentID.Text, startDate.Value, endDate.Value, block.Text);
                 MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                studentMainMenu mainmenu = new studentMainMenu();
-                mainmenu.ShowDialog();
+                //studentMainMenu mainmenu = new studentMainMenu();
+                //mainmenu.ShowDialog();
             } 
             catch (Exception err)
             {
@@ -62,6 +62,11 @@ namespace accommodation_management
         }
 
         private void block_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentAccommodationRequest_Load(object sender, EventArgs e)
         {
 
         }

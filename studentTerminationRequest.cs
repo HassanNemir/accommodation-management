@@ -20,8 +20,8 @@ namespace accommodation_management
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentMainMenu returnmenu = new studentMainMenu();
-            returnmenu.ShowDialog();
+           // studentMainMenu returnmenu = new studentMainMenu();
+           // returnmenu.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,11 +30,16 @@ namespace accommodation_management
             studentBooking.accommodationTerminationRequest(studentID.Text, TerminationDate.Value, terminationreason.Text);
             MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
-            studentMainMenu mainmenu = new studentMainMenu();
-            mainmenu.ShowDialog();
+            //studentMainMenu mainmenu = new studentMainMenu();
+            //mainmenu.ShowDialog();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentTerminationRequest_Load(object sender, EventArgs e)
         {
 
         }

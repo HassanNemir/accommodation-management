@@ -13,6 +13,8 @@ namespace accommodation_management
 {
     public partial class Login : Form
     {
+        List<Student> students = new List<Student>();
+
         public Login()
         {
             InitializeComponent();
@@ -28,15 +30,26 @@ namespace accommodation_management
             string query = $"Select * from students where email='{textBox1.Text}' AND password='{textBox2.Text}'";
             utils.SqlQuery(query);
             var email = textBox1.Text;
+
             // this should have the data from the db
             SqlDataReader dr = utils.SqlQuery(query);
             // dr has the data that we should use to login the user
-            if (dr.HasRows)
+            Student st;
 
+            if (dr.HasRows)
             {
+                
+                    string studentID = (string)dr["studentID"];
+                    string fullName = (string)dr["fullName"];
+                    string roomNumber = (string)dr["roomNumber"];
+                    string contactNumber = (string)dr["contactNumber"];
+                    st = new Student(studentID, roomNumber, fullName, contactNumber);
+                    Console.WriteLine("ffs {0}", st);
+                    students.Insert(0, st);
+                
                 MessageBox.Show("You have logged in successfully", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                studentMainMenu mainmenu = new studentMainMenu();
+                studentMainMenu mainmenu = new studentMainMenu(students[0]);
                 mainmenu.ShowDialog();
             }
             else
@@ -108,6 +121,11 @@ namespace accommodation_management
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
