@@ -63,5 +63,10 @@ namespace accommodation_management
             studentFeedback studentFeedback = new studentFeedback(oj);
             studentFeedback.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

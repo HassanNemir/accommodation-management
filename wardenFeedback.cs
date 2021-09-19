@@ -92,5 +92,15 @@ namespace accommodation_management
             Feedback feedback = new Feedback();
             feedback.updateFeedback(selectedFeedbackID, fbComment.Text, "ttestWr1");
         }
+
+        private void studentIDList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -92,5 +92,10 @@ namespace accommodation_management
             AccommodationBooking booking = new AccommodationBooking();
             booking.updateStudentRoomNumber(selectedBookingID, "ttestWr1", selectedStudentID, roomNumber.Text);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

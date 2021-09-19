@@ -39,5 +39,10 @@ namespace accommodation_management
         {
             stFeedback = new Feedback(studentID.Text, subject.Text, feedback.Text);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

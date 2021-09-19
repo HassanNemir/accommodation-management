@@ -29,133 +29,206 @@ namespace accommodation_management
         /// </summary>
         private void InitializeComponent()
         {
-            this.studentIDList = new System.Windows.Forms.ComboBox();
-            this.studentName = new System.Windows.Forms.Label();
-            this.roomNumber = new System.Windows.Forms.Label();
-            this.subject = new System.Windows.Forms.Label();
-            this.feedbacktxt = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.fbComment = new System.Windows.Forms.RichTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wardenFeedback));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.terminationreason = new System.Windows.Forms.RichTextBox();
+            this.studentName = new System.Windows.Forms.Label();
+            this.studentIDList = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // studentIDList
+            // panel1
             // 
-            this.studentIDList.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentIDList.FormattingEnabled = true;
-            this.studentIDList.Location = new System.Drawing.Point(84, 51);
-            this.studentIDList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.studentIDList.Name = "studentIDList";
-            this.studentIDList.Size = new System.Drawing.Size(908, 45);
-            this.studentIDList.TabIndex = 2;
-            this.studentIDList.Text = "List of Student ID";
-            this.studentIDList.SelectedIndexChanged += new System.EventHandler(this.studentIDList_SelectedIndexChanged);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(450, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(300, 530);
+            this.panel1.TabIndex = 14;
             // 
-            // studentName
+            // label5
             // 
-            this.studentName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.studentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentName.Location = new System.Drawing.Point(32, 122);
-            this.studentName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.studentName.Name = "studentName";
-            this.studentName.Size = new System.Drawing.Size(421, 35);
-            this.studentName.TabIndex = 3;
-            this.studentName.Text = "Student Name";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(235, 509);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 16);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Y U R I K A";
             // 
-            // roomNumber
+            // label6
             // 
-            this.roomNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.roomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomNumber.Location = new System.Drawing.Point(480, 122);
-            this.roomNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.roomNumber.Name = "roomNumber";
-            this.roomNumber.Size = new System.Drawing.Size(549, 35);
-            this.roomNumber.TabIndex = 4;
-            this.roomNumber.Text = "Room Number";
-            // 
-            // subject
-            // 
-            this.subject.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.subject.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject.Location = new System.Drawing.Point(32, 191);
-            this.subject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.subject.Name = "subject";
-            this.subject.Size = new System.Drawing.Size(421, 35);
-            this.subject.TabIndex = 5;
-            this.subject.Text = "Subject";
-            // 
-            // feedbacktxt
-            // 
-            this.feedbacktxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.feedbacktxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.feedbacktxt.Location = new System.Drawing.Point(32, 253);
-            this.feedbacktxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.feedbacktxt.Name = "feedbacktxt";
-            this.feedbacktxt.Size = new System.Drawing.Size(421, 194);
-            this.feedbacktxt.TabIndex = 6;
-            this.feedbacktxt.Text = "Feedback";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(713, 545);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 58);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(875, 545);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 58);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // fbComment
-            // 
-            this.fbComment.Location = new System.Drawing.Point(506, 262);
-            this.fbComment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.fbComment.Name = "fbComment";
-            this.fbComment.Size = new System.Drawing.Size(381, 185);
-            this.fbComment.TabIndex = 9;
-            this.fbComment.Text = "";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(212, 493);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 16);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Developed By";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(502, 237);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(5, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Comment";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Size = new System.Drawing.Size(240, 19);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "ACCOMMODATION FEEDBACK";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-169, 85);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(608, 525);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(41, 146);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 17);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Student Feedback";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // terminationreason
+            // 
+            this.terminationreason.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.terminationreason.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.terminationreason.Location = new System.Drawing.Point(44, 166);
+            this.terminationreason.Name = "terminationreason";
+            this.terminationreason.Size = new System.Drawing.Size(365, 90);
+            this.terminationreason.TabIndex = 34;
+            this.terminationreason.Text = "";
+            // 
+            // studentName
+            // 
+            this.studentName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.studentName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentName.Location = new System.Drawing.Point(44, 97);
+            this.studentName.Name = "studentName";
+            this.studentName.Size = new System.Drawing.Size(369, 27);
+            this.studentName.TabIndex = 33;
+            this.studentName.Text = "Student Name";
+            // 
+            // studentIDList
+            // 
+            this.studentIDList.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentIDList.FormattingEnabled = true;
+            this.studentIDList.Location = new System.Drawing.Point(44, 54);
+            this.studentIDList.Name = "studentIDList";
+            this.studentIDList.Size = new System.Drawing.Size(369, 25);
+            this.studentIDList.TabIndex = 32;
+            this.studentIDList.Text = "List of Student ID";
+            this.studentIDList.SelectedIndexChanged += new System.EventHandler(this.studentIDList_SelectedIndexChanged);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(15, 11);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 31;
+            this.button2.Text = "BACK";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(261, 410);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 35);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "REPLY FEEDBACK";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(44, 288);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(365, 110);
+            this.richTextBox1.TabIndex = 36;
+            this.richTextBox1.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 268);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Reply";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
+            this.button3.Location = new System.Drawing.Point(107, 410);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(148, 35);
+            this.button3.TabIndex = 38;
+            this.button3.Text = "CLOSE FEEDBACK";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // wardenFeedback
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 655);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.fbComment);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.feedbacktxt);
-            this.Controls.Add(this.subject);
-            this.Controls.Add(this.roomNumber);
+            this.ClientSize = new System.Drawing.Size(750, 530);
+            this.ControlBox = false;
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.terminationreason);
             this.Controls.Add(this.studentName);
             this.Controls.Add(this.studentIDList);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "wardenFeedback";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Warden | Review Feedback";
-            this.Load += new System.EventHandler(this.wardenFeedback_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,14 +236,19 @@ namespace accommodation_management
 
         #endregion
 
-        private System.Windows.Forms.ComboBox studentIDList;
-        private System.Windows.Forms.Label studentName;
-        private System.Windows.Forms.Label roomNumber;
-        private System.Windows.Forms.Label subject;
-        private System.Windows.Forms.Label feedbacktxt;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox fbComment;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox terminationreason;
+        private System.Windows.Forms.Label studentName;
+        private System.Windows.Forms.ComboBox studentIDList;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
     }
 }
