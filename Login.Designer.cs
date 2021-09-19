@@ -39,11 +39,9 @@ namespace accommodation_management
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -168,11 +166,9 @@ namespace accommodation_management
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.panel3);
@@ -183,17 +179,6 @@ namespace accommodation_management
             this.panel2.Size = new System.Drawing.Size(456, 530);
             this.panel2.TabIndex = 7;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.linkLabel1.Location = new System.Drawing.Point(173, 482);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(143, 13);
-            this.linkLabel1.TabIndex = 13;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Tp062951@mail.apu.edu.my";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -201,9 +186,10 @@ namespace accommodation_management
             this.label9.ForeColor = System.Drawing.Color.Silver;
             this.label9.Location = new System.Drawing.Point(27, 480);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(149, 16);
+            this.label9.Size = new System.Drawing.Size(303, 16);
             this.label9.TabIndex = 12;
-            this.label9.Text = "please submit an email to:";
+            this.label9.Text = "please submit an email to: Tp062951@mail.apu.edu.my";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -226,20 +212,6 @@ namespace accommodation_management
             this.label7.Size = new System.Drawing.Size(54, 16);
             this.label7.TabIndex = 6;
             this.label7.Text = "Support:";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(191, 299);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 35);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Forgot your password?";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -371,9 +343,7 @@ namespace accommodation_management
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
