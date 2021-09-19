@@ -51,8 +51,7 @@ namespace accommodation_management
             SqlDataReader dr = accBooking.getBookingAndChangeRoomRequests();
             if (dr.HasRows)
             {
-                while (dr.Read())
-                {
+                
                     string bookingID = (string)dr["bookingID"];
                     string studentID = (string)dr["studentID"];
                     string studentFullName = (string)dr["fullName"];
@@ -62,7 +61,7 @@ namespace accommodation_management
                     AccommodationBooking b = new AccommodationBooking(bookingID, studentID, studentFullName, roomNumber);
                     bookings.Add(b);
                     b = null;
-                }
+                
             }
 
             foreach(AccommodationBooking booking in bookings)

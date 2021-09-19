@@ -26,8 +26,8 @@ namespace accommodation_management
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentMainMenu returnmenu = new studentMainMenu();
-            returnmenu.ShowDialog();
+            //studentMainMenu returnmenu = new studentMainMenu();
+            //returnmenu.ShowDialog();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -12,18 +12,20 @@ namespace accommodation_management
 {
     public partial class studentMainMenu : Form
     {
-        public studentMainMenu()
+        Student st;
+        public studentMainMenu(Object obj)
         {
             InitializeComponent();
+            st = (Student)obj;
         }
 
         private void studentMainMenu_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             this.Hide();
             studentAccommodationRequest accommodationreq = new studentAccommodationRequest();
             accommodationreq.ShowDialog();
