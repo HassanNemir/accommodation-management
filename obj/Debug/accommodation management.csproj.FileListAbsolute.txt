@@ -35,3 +35,8 @@ C:\Users\Hassan\source\repos\accommodation management\accommodation management\a
 C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.studentFeedback.resources
 C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.studentTerminationRequest.resources
 C:\Users\Hassan\source\repos\accommodation management\accommodation management\accommodation management\obj\Debug\accommodation_management.wardenFeedback.resources
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.studentAccommodationRequest.resources
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.studentRoomChangeRequest.resources
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.studentFeedback.resources
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.studentTerminationRequest.resources
+C:\Users\Z\Documents\GitHub\accommodation-management\obj\Debug\accommodation_management.wardenFeedback.resources
