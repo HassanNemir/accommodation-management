@@ -102,11 +102,6 @@ namespace accommodation_management
             try
             {
                 Utilities utils = new Utilities();
-
-
-                /**
-                 * validate data
-                 */
                 /**
                  * store termination request in accommodation info
                  */
@@ -123,7 +118,6 @@ namespace accommodation_management
                 utils.SqlQuery(query);
             } catch (Exception err)
             {
-                Console.WriteLine("Error {0}", err.Message);
                 throw new ArgumentException(err.Message);
             }
             

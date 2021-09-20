@@ -23,12 +23,6 @@ namespace accommodation_management
             dr = cmd.ExecuteReader();
 
             // dr has the data that we should use to login the user
-
-
-            // closing the connection
-            // dr.Close();
-
-            //conn.Close();
             dr.Read();
             return dr;
         }
