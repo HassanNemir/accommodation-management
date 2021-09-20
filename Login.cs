@@ -72,7 +72,7 @@ namespace accommodation_management
                 }
                 else
                 {
-                 MessageBox.Show("Incorrect email or password. Please retry.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Incorrect email or password. Please retry.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
         }

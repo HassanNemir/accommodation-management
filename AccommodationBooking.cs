@@ -68,9 +68,6 @@ namespace accommodation_management
             {
                 throw new ArgumentException("Student already has a request in progress");
             }
-            /**
-             * validations
-             */
 
             /**
              * set values
