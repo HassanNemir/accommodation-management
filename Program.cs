@@ -16,7 +16,7 @@ namespace accommodation_management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Accommodation_Termination());
+            Application.Run(new Login());
         }
     }
 }
