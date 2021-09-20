@@ -78,7 +78,7 @@ namespace accommodation_management
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(60, 231);
+            this.label3.Location = new System.Drawing.Point(60, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 17);
             this.label3.TabIndex = 6;
@@ -87,9 +87,9 @@ namespace accommodation_management
             // terminationreason
             // 
             this.terminationreason.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.terminationreason.Location = new System.Drawing.Point(63, 251);
+            this.terminationreason.Location = new System.Drawing.Point(50, 165);
             this.terminationreason.Name = "terminationreason";
-            this.terminationreason.Size = new System.Drawing.Size(345, 144);
+            this.terminationreason.Size = new System.Drawing.Size(358, 230);
             this.terminationreason.TabIndex = 7;
             this.terminationreason.Text = "";
             this.terminationreason.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -98,7 +98,7 @@ namespace accommodation_management
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(60, 173);
+            this.label4.Location = new System.Drawing.Point(60, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 17);
             this.label4.TabIndex = 8;
@@ -108,8 +108,8 @@ namespace accommodation_management
             // 
             this.TerminationDate.CustomFormat = "\"MM DD YYYY\"";
             this.TerminationDate.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TerminationDate.Location = new System.Drawing.Point(212, 169);
-            this.TerminationDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TerminationDate.Location = new System.Drawing.Point(212, 80);
+            this.TerminationDate.Margin = new System.Windows.Forms.Padding(2);
             this.TerminationDate.Name = "TerminationDate";
             this.TerminationDate.Size = new System.Drawing.Size(196, 21);
             this.TerminationDate.TabIndex = 21;
