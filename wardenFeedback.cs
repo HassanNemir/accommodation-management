@@ -99,5 +99,15 @@ namespace accommodation_management
             wardenMainMenu returnmenu = new wardenMainMenu(wr);
             returnmenu.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fbComment_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
