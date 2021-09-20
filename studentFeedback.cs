@@ -12,10 +12,12 @@ namespace accommodation_management
 {
     public partial class studentFeedback : Form
     {
-        Feedback stFeedback; 
+        Feedback stFeedback;
+        Student st;
         public studentFeedback(Object obj)
         {
             InitializeComponent();
+            st = (Student)obj;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -37,7 +39,7 @@ namespace accommodation_management
          
         private void button1_Click(object sender, EventArgs e)
         {
-            stFeedback = new Feedback(studentID.Text, subject.Text, feedback.Text);
+            stFeedback = new Feedback(st.StudentID, subject.Text, feedback.Text);
         }
     }
 }

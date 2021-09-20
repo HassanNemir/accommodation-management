@@ -12,9 +12,11 @@ namespace accommodation_management
 {
     public partial class studentTerminationRequest : Form
     {
+        Student st;
         public studentTerminationRequest(Object obj)
         {
             InitializeComponent();
+            st = (Student)obj;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -27,7 +29,7 @@ namespace accommodation_management
         private void button1_Click(object sender, EventArgs e)
         {
             AccommodationBooking studentBooking = new AccommodationBooking();
-            studentBooking.accommodationTerminationRequest(studentID.Text, TerminationDate.Value, terminationreason.Text);
+            studentBooking.accommodationTerminationRequest(st.StudentID, TerminationDate.Value, terminationreason.Text);
             MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
             //studentMainMenu mainmenu = new studentMainMenu();

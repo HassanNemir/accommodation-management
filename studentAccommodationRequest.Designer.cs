@@ -30,8 +30,6 @@ namespace accommodation_management
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.studentID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,30 +54,10 @@ namespace accommodation_management
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // studentID
-            // 
-            this.studentID.Location = new System.Drawing.Point(309, 50);
-            this.studentID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.studentID.Name = "studentID";
-            this.studentID.Size = new System.Drawing.Size(180, 26);
-            this.studentID.TabIndex = 3;
-            this.studentID.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(80, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Student ID";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 128);
+            this.label5.Location = new System.Drawing.Point(74, 50);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 20);
@@ -89,7 +67,7 @@ namespace accommodation_management
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(80, 205);
+            this.label6.Location = new System.Drawing.Point(74, 122);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 20);
@@ -99,7 +77,7 @@ namespace accommodation_management
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(80, 306);
+            this.label7.Location = new System.Drawing.Point(74, 200);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(167, 20);
@@ -123,7 +101,7 @@ namespace accommodation_management
             this.block.Items.AddRange(new object[] {
             "Block A",
             "Block B"});
-            this.block.Location = new System.Drawing.Point(309, 298);
+            this.block.Location = new System.Drawing.Point(309, 192);
             this.block.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.block.Name = "block";
             this.block.Size = new System.Drawing.Size(180, 28);
@@ -153,7 +131,7 @@ namespace accommodation_management
             // startDate
             // 
             this.startDate.CustomFormat = "";
-            this.startDate.Location = new System.Drawing.Point(309, 122);
+            this.startDate.Location = new System.Drawing.Point(309, 50);
             this.startDate.Name = "startDate";
             this.startDate.Size = new System.Drawing.Size(200, 26);
             this.startDate.TabIndex = 19;
@@ -162,7 +140,7 @@ namespace accommodation_management
             // endDate
             // 
             this.endDate.CustomFormat = "\"MM DD YYYY\"";
-            this.endDate.Location = new System.Drawing.Point(309, 205);
+            this.endDate.Location = new System.Drawing.Point(309, 117);
             this.endDate.Name = "endDate";
             this.endDate.Size = new System.Drawing.Size(200, 26);
             this.endDate.TabIndex = 20;
@@ -207,8 +185,6 @@ namespace accommodation_management
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.studentID);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "studentAccommodationRequest";
@@ -223,8 +199,6 @@ namespace accommodation_management
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox studentID;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
