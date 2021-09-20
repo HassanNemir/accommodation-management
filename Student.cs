@@ -26,11 +26,21 @@ namespace accommodation_management
             get { return studentID; }
         }
 
+        public string FullName
+        {
+            get { return fullName; }
+        }
+
+        public string RoomNumber
+        {
+            get { return roomNumber; }
+        }
         public void terminateStudentAccommodation(string studentID)
         {
+            this.studentID = studentID;
             Utilities utils = new Utilities();
-            string query1 = $"UPDATE students SET roomNumber=Null WHERE studentID='{studentID}';";
-            string query2 = $"UPDATE AccommodationInformation SET studentID=Null WHERE studentID='{studentID}';";
+            string query1 = $"UPDATE students SET roomNumber=Null WHERE studentID='{this.studentID}';";
+            string query2 = $"UPDATE AccommodationInformation SET studentID=Null WHERE studentID='{this.studentID}';";
 
             utils.SqlQuery(query1 + query2);
         }

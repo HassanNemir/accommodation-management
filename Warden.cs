@@ -20,5 +20,10 @@ namespace accommodation_management
             this.email = email;
             this.contactNumber = contactNumber;
         }
+
+        public string WardenID
+        {
+            get { return wardenID; }
+        }
     }
 }
