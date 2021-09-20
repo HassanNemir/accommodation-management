@@ -158,6 +158,20 @@ namespace accommodation_management
         {
             try
             {
+                Utilities ut = new Utilities();
+                //validate that the room exists and has no students assigned
+                SqlDataReader dr =  ut.SqlQuery($"SELECT roomNumber, studentID FROM AccommodationInformation WHERE roomNumber={roomNumber}");
+                if(!dr.HasRows)
+                {
+                    throw new ArgumentException("Room number is invalid");
+                } else
+                {
+                    string stID = dr["studentID"] == DBNull.Value ? string.Empty : (string)dr["studentID"];
+                    if(!String.IsNullOrEmpty(stID))
+                    {
+                        throw new ArgumentException("Room number is already assigned to a student.");
+                    }
+                }
                 Utilities utils = new Utilities();
                 string query1 = $"UPDATE students SET roomNumber=(SELECT roomNumber FROM AccommodationInformation WHERE roomNumber='{roomNumber}') WHERE studentID='{studentID}';";
                 string query2 = $"UPDATE AccommodationBooking SET status='completed', wardenID=(SELECT wardenID FROM warden WHERE wardenID='{wardenID}') WHERE bookingID='{bookingID}';";

@@ -89,8 +89,23 @@ namespace accommodation_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AccommodationBooking booking = new AccommodationBooking();
-            booking.updateStudentRoomNumber(selectedBookingID, wr.WardenID, selectedStudentID, roomNumber.Text);
+            //validate that values are not empty
+            if(String.IsNullOrEmpty(roomNumber.Text) || String.IsNullOrEmpty(selectedStudentID))
+            {
+                MessageBox.Show("Selected student and room number can not be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else
+            {
+                // It's validated in the class method that if room number is invalid
+                // or assigned to another student the warden will get an error.
+                try
+                {
+                    AccommodationBooking booking = new AccommodationBooking();
+                    booking.updateStudentRoomNumber(selectedBookingID, wr.WardenID, selectedStudentID, roomNumber.Text);
+                } catch (Exception err)
+                {
+                    MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
