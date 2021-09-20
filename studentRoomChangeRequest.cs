@@ -28,21 +28,24 @@ namespace accommodation_management
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //studentMainMenu returnmenu = new studentMainMenu();
-            //returnmenu.ShowDialog();
+            studentMainMenu returnmenu = new studentMainMenu(st);
+            returnmenu.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            AccommodationBooking studentBooking = new AccommodationBooking();
-            Console.WriteLine("aa {0}", selectedText);
-
-            studentBooking.changeRoomRequest(st.StudentID, selectedText);
-            MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Hide();
-            //studentMainMenu mainmenu = new studentMainMenu();
-            //mainmenu.ShowDialog();
+            if (String.IsNullOrEmpty(block.Text))
+            {
+                MessageBox.Show("Please select an accommodation block.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else
+            {
+                AccommodationBooking studentBooking = new AccommodationBooking();
+                studentBooking.changeRoomRequest(st.StudentID, selectedText);
+                MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                studentMainMenu mainmenu = new studentMainMenu(st);
+                mainmenu.ShowDialog();
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
