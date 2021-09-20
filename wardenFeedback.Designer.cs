@@ -44,10 +44,9 @@ namespace accommodation_management
             // 
             this.studentIDList.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentIDList.FormattingEnabled = true;
-            this.studentIDList.Location = new System.Drawing.Point(84, 51);
-            this.studentIDList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.studentIDList.Location = new System.Drawing.Point(56, 33);
             this.studentIDList.Name = "studentIDList";
-            this.studentIDList.Size = new System.Drawing.Size(908, 45);
+            this.studentIDList.Size = new System.Drawing.Size(607, 33);
             this.studentIDList.TabIndex = 2;
             this.studentIDList.Text = "List of Student ID";
             this.studentIDList.SelectedIndexChanged += new System.EventHandler(this.studentIDList_SelectedIndexChanged);
@@ -56,10 +55,9 @@ namespace accommodation_management
             // 
             this.studentName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.studentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentName.Location = new System.Drawing.Point(32, 122);
-            this.studentName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.studentName.Location = new System.Drawing.Point(21, 79);
             this.studentName.Name = "studentName";
-            this.studentName.Size = new System.Drawing.Size(421, 35);
+            this.studentName.Size = new System.Drawing.Size(281, 23);
             this.studentName.TabIndex = 3;
             this.studentName.Text = "Student Name";
             // 
@@ -67,10 +65,9 @@ namespace accommodation_management
             // 
             this.roomNumber.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.roomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomNumber.Location = new System.Drawing.Point(480, 122);
-            this.roomNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.roomNumber.Location = new System.Drawing.Point(320, 79);
             this.roomNumber.Name = "roomNumber";
-            this.roomNumber.Size = new System.Drawing.Size(549, 35);
+            this.roomNumber.Size = new System.Drawing.Size(366, 23);
             this.roomNumber.TabIndex = 4;
             this.roomNumber.Text = "Room Number";
             // 
@@ -78,10 +75,9 @@ namespace accommodation_management
             // 
             this.subject.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.subject.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject.Location = new System.Drawing.Point(32, 191);
-            this.subject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.subject.Location = new System.Drawing.Point(21, 124);
             this.subject.Name = "subject";
-            this.subject.Size = new System.Drawing.Size(421, 35);
+            this.subject.Size = new System.Drawing.Size(281, 23);
             this.subject.TabIndex = 5;
             this.subject.Text = "Subject";
             // 
@@ -89,20 +85,18 @@ namespace accommodation_management
             // 
             this.feedbacktxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feedbacktxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.feedbacktxt.Location = new System.Drawing.Point(32, 253);
-            this.feedbacktxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.feedbacktxt.Location = new System.Drawing.Point(21, 164);
             this.feedbacktxt.Name = "feedbacktxt";
-            this.feedbacktxt.Size = new System.Drawing.Size(421, 194);
+            this.feedbacktxt.Size = new System.Drawing.Size(281, 126);
             this.feedbacktxt.TabIndex = 6;
             this.feedbacktxt.Text = "Feedback";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(713, 545);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(475, 354);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 58);
+            this.button1.Size = new System.Drawing.Size(103, 38);
             this.button1.TabIndex = 7;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
@@ -111,39 +105,37 @@ namespace accommodation_management
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(875, 545);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(583, 354);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 58);
+            this.button2.Size = new System.Drawing.Size(103, 38);
             this.button2.TabIndex = 8;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // fbComment
             // 
-            this.fbComment.Location = new System.Drawing.Point(506, 262);
-            this.fbComment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.fbComment.Location = new System.Drawing.Point(337, 170);
             this.fbComment.Name = "fbComment";
-            this.fbComment.Size = new System.Drawing.Size(381, 185);
+            this.fbComment.Size = new System.Drawing.Size(255, 122);
             this.fbComment.TabIndex = 9;
             this.fbComment.Text = "";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(502, 237);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(335, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
+            this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Comment";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // wardenFeedback
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 655);
+            this.ClientSize = new System.Drawing.Size(709, 426);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.fbComment);
             this.Controls.Add(this.button2);
@@ -153,6 +145,7 @@ namespace accommodation_management
             this.Controls.Add(this.roomNumber);
             this.Controls.Add(this.studentName);
             this.Controls.Add(this.studentIDList);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "wardenFeedback";
             this.Text = "Warden | Review Feedback";
             this.Load += new System.EventHandler(this.wardenFeedback_Load);

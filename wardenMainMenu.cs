@@ -44,5 +44,18 @@ namespace accommodation_management
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            wardenFeedback fbackmenu = new wardenFeedback(wr);
+            fbackmenu.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            accommodationReport rep = new accommodationReport();
+            rep.ShowDialog();
+        }
     }
 }

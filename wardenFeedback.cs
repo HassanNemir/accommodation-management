@@ -92,5 +92,12 @@ namespace accommodation_management
             Feedback feedback = new Feedback();
             feedback.updateFeedback(selectedFeedbackID, fbComment.Text, "ttestWr1");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            wardenMainMenu returnmenu = new wardenMainMenu(wr);
+            returnmenu.ShowDialog();
+        }
     }
 }
