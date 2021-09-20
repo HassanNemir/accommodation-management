@@ -200,7 +200,7 @@ namespace accommodation_management
                 return utils.SqlQuery(query);
             } catch (Exception err)
             {
-                Console.WriteLine("Error {0}", e.Message);
+                Console.WriteLine("Error {0}", err .Message);
                 throw new ArgumentException(err.Message);
             }
 
