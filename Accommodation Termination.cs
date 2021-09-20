@@ -74,7 +74,7 @@ namespace accommodation_management
         private void button1_Click(object sender, EventArgs e)
         {
             AccommodationBooking booking = new AccommodationBooking();
-            booking.terminateStudentAccommodation(selectedBookingID, "ttestWr1", selectedStudentID, roomNumber.Text);
+            booking.terminateStudentAccommodation(selectedBookingID, wr.WardenID, selectedStudentID, roomNumber.Text);
         }
     }
 }

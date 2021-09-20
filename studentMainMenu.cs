@@ -13,14 +13,18 @@ namespace accommodation_management
     public partial class studentMainMenu : Form
     {
         Object oj;
+        Student st;
         public studentMainMenu(Object obj)
         {
             InitializeComponent();
             oj = obj;
+            st = (Student)obj;
         }
 
         private void studentMainMenu_Load(object sender, EventArgs e)
         {
+            roomNumberLabel.Text = String.IsNullOrEmpty(st.RoomNumber) ? st.RoomNumber : "Not residing the campus.";
+            fullNameLabel.Text = st.FullName;
         }
 
         private void button1_Click(object sender, EventArgs e)

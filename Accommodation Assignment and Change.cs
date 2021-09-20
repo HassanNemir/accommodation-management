@@ -90,7 +90,7 @@ namespace accommodation_management
         private void button1_Click(object sender, EventArgs e)
         {
             AccommodationBooking booking = new AccommodationBooking();
-            booking.updateStudentRoomNumber(selectedBookingID, "ttestWr1", selectedStudentID, roomNumber.Text);
+            booking.updateStudentRoomNumber(selectedBookingID, wr.WardenID, selectedStudentID, roomNumber.Text);
         }
     }
 }
