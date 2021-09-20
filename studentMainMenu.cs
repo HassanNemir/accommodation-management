@@ -23,7 +23,7 @@ namespace accommodation_management
 
         private void studentMainMenu_Load(object sender, EventArgs e)
         {
-            roomNumberLabel.Text = String.IsNullOrEmpty(st.RoomNumber) ? st.RoomNumber : "Not residing the campus.";
+            roomNumberLabel.Text = !String.IsNullOrEmpty(st.RoomNumber) ? st.RoomNumber : "Not residing the campus.";
             fullNameLabel.Text = st.FullName;
         }
 
