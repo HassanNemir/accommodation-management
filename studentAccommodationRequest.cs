@@ -29,6 +29,8 @@ namespace accommodation_management
         {
 
             startDate.CustomFormat = "MMMM dd yyyy";
+            // Set endDate to 17 weeks after the start date by default
+            endDate.Value = startDate.Value.AddDays(119);
 
 
         }
