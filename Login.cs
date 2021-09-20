@@ -41,7 +41,7 @@ namespace accommodation_management
             {
                 string studentID = (string)dr["studentID"];
                 string fullName = (string)dr["fullName"];
-                string roomNumber = (string)dr["roomNumber"];
+                string roomNumber = dr["roomNumber"] == DBNull.Value ? string.Empty : (string)dr["roomNumber"];
                 string contactNumber = (string)dr["contactNumber"];
                 st = new Student(studentID, roomNumber, fullName, contactNumber);
                 students.Insert(0, st);
