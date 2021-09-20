@@ -13,7 +13,7 @@ namespace accommodation_management
     public partial class studentFeedback : Form
     {
         Feedback stFeedback; 
-        public studentFeedback()
+        public studentFeedback(Object obj)
         {
             InitializeComponent();
         }

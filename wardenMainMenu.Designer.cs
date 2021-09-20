@@ -171,6 +171,7 @@ namespace accommodation_management
             this.Name = "wardenMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "wardenMainMenu";
+            this.Load += new System.EventHandler(this.wardenMainMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

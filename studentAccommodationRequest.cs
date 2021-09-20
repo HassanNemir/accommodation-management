@@ -13,9 +13,11 @@ namespace accommodation_management
     public partial class studentAccommodationRequest : Form
     {
         AccommodationBooking studentBooking;
-        public studentAccommodationRequest()
+        Student st;
+        public studentAccommodationRequest(Object obj)
         {
             InitializeComponent();
+            st = (Student)obj;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace accommodation_management
         {
             try
             {
-                studentBooking = new AccommodationBooking(studentID.Text, startDate.Value, endDate.Value, block.Text);
+                studentBooking = new AccommodationBooking(st.StudentID, startDate.Value, endDate.Value, block.Text);
                 MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 //studentMainMenu mainmenu = new studentMainMenu();

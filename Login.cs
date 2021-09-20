@@ -14,6 +14,7 @@ namespace accommodation_management
     public partial class Login : Form
     {
         List<Student> students = new List<Student>();
+        List<Warden> wardens = new List<Warden>();
 
         public Login()
         {
@@ -35,17 +36,15 @@ namespace accommodation_management
             SqlDataReader dr = utils.SqlQuery(query);
             // dr has the data that we should use to login the user
             Student st;
-
+            Warden wd;
             if (dr.HasRows)
             {
-                
-                    string studentID = (string)dr["studentID"];
-                    string fullName = (string)dr["fullName"];
-                    string roomNumber = (string)dr["roomNumber"];
-                    string contactNumber = (string)dr["contactNumber"];
-                    st = new Student(studentID, roomNumber, fullName, contactNumber);
-                    Console.WriteLine("ffs {0}", st);
-                    students.Insert(0, st);
+                string studentID = (string)dr["studentID"];
+                string fullName = (string)dr["fullName"];
+                string roomNumber = (string)dr["roomNumber"];
+                string contactNumber = (string)dr["contactNumber"];
+                st = new Student(studentID, roomNumber, fullName, contactNumber);
+                students.Insert(0, st);
                 
                 MessageBox.Show("You have logged in successfully", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
@@ -59,9 +58,16 @@ namespace accommodation_management
                 SqlDataReader Wdr = utils.SqlQuery(Wquery);
                 if (Wdr.HasRows)
                 {
+                    string wardenID = (string)Wdr["wardenID"];
+                    string wardenName = (string)Wdr["wardenName"];
+                    string wrEmail = (string)Wdr["email"];
+                    string contactNumber = (string)Wdr["contactNumber"];
+                    wd = new Warden(wardenID, wardenName, wrEmail, contactNumber);
+                    wardens.Insert(0, wd);
+
                     MessageBox.Show("You have logged in successfully", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    wardenMainMenu Wmainmenu = new wardenMainMenu();
+                    wardenMainMenu Wmainmenu = new wardenMainMenu(wardens[0]);
                     Wmainmenu.ShowDialog();
                 }
                 else
