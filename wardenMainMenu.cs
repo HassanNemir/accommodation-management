@@ -12,11 +12,13 @@ namespace accommodation_management
 {
     public partial class wardenMainMenu : Form
     {
-        Object wr;
+        Object oj;
+        Warden wr;
         public wardenMainMenu(Object obj)
         {
             InitializeComponent();
-            wr = obj;
+            oj = obj;
+            wr = (Warden)oj;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace accommodation_management
 
         private void wardenMainMenu_Load(object sender, EventArgs e)
         {
-
+            wardenName.Text = wr.WardenName;
         }
 
         private void button5_Click(object sender, EventArgs e)

@@ -25,5 +25,10 @@ namespace accommodation_management
         {
             get { return wardenID; }
         }
+
+        public string WardenName
+        {
+            get { return wardenName; }
+        }
     }
 }
