@@ -90,5 +90,13 @@ namespace accommodation_management
             string query = $"SELECT Feedback.feedbackID, Feedback.studentID, Feedback.subject, Feedback.feedback, students.fullName, students.roomNumber FROM Feedback JOIN students ON Feedback.studentID = students.studentID WHERE Feedback.status='In progress'; ";
             return utils.SqlQuery(query);
         }
+
+        public void updateFeedback(string feedbackID, string wardenComment, string wardenID)
+        {
+            Utilities utils = new Utilities();
+            string query = $"UPDATE Feedback SET status='completed', feedbackComment='{wardenComment}', wardenID=(SELECT wardenID FROM warden WHERE wardenID='{wardenID}') WHERE feedbackID='{feedbackID}';";
+            utils.SqlQuery(query);
+        }
+
     }
 }

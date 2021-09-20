@@ -61,6 +61,19 @@ namespace accommodation_management
                     AccommodationBooking b = new AccommodationBooking(bookingID, studentID, studentFullName, roomNumber);
                     bookings.Add(b);
                     b = null;
+
+                while(dr.Read())
+                {
+                    string bookingID2 = (string)dr["bookingID"];
+                    string studentID2 = (string)dr["studentID"];
+                    string studentFullName2 = (string)dr["fullName"];
+                    string roomNumber2 = dr["roomNumber"] == DBNull.Value ? String.Empty : (string)dr["roomNumber"];
+
+
+                    AccommodationBooking b2 = new AccommodationBooking(bookingID2, studentID2, studentFullName2, roomNumber2);
+                    bookings.Add(b2);
+                    b2 = null;
+                }
                 
             }
 

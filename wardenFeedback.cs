@@ -46,11 +46,26 @@ namespace accommodation_management
                 feedbacks.Add(fb);
                 fb = null;
 
+                while (dr.Read())
+                {
+                    string feedbackID2 = (string)dr["feedbackID"];
+                    string studentID2 = (string)dr["studentID"];
+                    string studentFullName2 = (string)dr["fullName"];
+                    string subject2 = (string)dr["subject"];
+                    string feedback2 = (string)dr["feedback"];
+                    string roomNumber2 = dr["roomNumber"] == DBNull.Value ? String.Empty : (string)dr["roomNumber"];
+
+
+                    Feedback fb2 = new Feedback(feedbackID2, studentID2, studentFullName2, roomNumber2, subject2, feedback2);
+                    feedbacks.Add(fb2);
+                    fb2 = null;
+                }
+
             }
 
             foreach (Feedback fb in feedbacks)
             {
-                studentIDList.Items.Add(fb.stID);
+                studentIDList.Items.Add($"Subject: {fb.Subject} | Student ID: {fb.stID}");
             }
         }
 
@@ -68,6 +83,12 @@ namespace accommodation_management
                     feedbacktxt.Text = feedback.feedbackTxt;
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Feedback feedback = new Feedback();
+            feedback.updateFeedback(selectedFeedbackID, fbComment.Text, "ttestWr1");
         }
     }
 }

@@ -102,26 +102,34 @@ namespace accommodation_management
 
         public void accommodationTerminationRequest (string studentID, DateTime terminationDate, string terminationReason)
         {
-            Utilities utils = new Utilities();
+            try
+            {
+                Utilities utils = new Utilities();
 
 
-            /**
-             * validate data
-             */
-            /**
-             * store termination request in accommodation info
-             */
-            this.type = "termination";
-            this.terminationReason = terminationReason;
-            this.terminationDate = terminationDate;
-            this.studentID = studentID;
-            this.bookingDate = DateTime.Now;
-            this.status = "In progress";
+                /**
+                 * validate data
+                 */
+                /**
+                 * store termination request in accommodation info
+                 */
+                this.type = "termination";
+                this.terminationReason = terminationReason;
+                this.terminationDate = terminationDate;
+                this.studentID = studentID;
+                this.bookingDate = DateTime.Now;
+                this.status = "In progress";
 
-            string timestamp = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds().ToString();
-            this.bookingID = "b" + timestamp;
-            string query = $"INSERT INTO AccommodationBooking (bookingDate, terminationDate, terminationReason, bookingID, studentID, type, status) VALUES ('{this.bookingDate}', '{this.terminationDate}', '{this.terminationReason}', '{this.bookingID}', (SELECT studentID FROM students WHERE studentID = '{this.studentID}'), '{ this.type}', '{ this.status}'); ";
-            utils.SqlQuery(query);
+                string timestamp = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds().ToString();
+                this.bookingID = "b" + timestamp;
+                string query = $"INSERT INTO AccommodationBooking (bookingDate, terminationDate, terminationReason, bookingID, studentID, type, status) VALUES ('{this.bookingDate}', '{this.terminationDate}', '{this.terminationReason}', '{this.bookingID}', (SELECT studentID FROM students WHERE studentID = '{this.studentID}'), '{ this.type}', '{ this.status}'); ";
+                utils.SqlQuery(query);
+            } catch (Exception err)
+            {
+                Console.WriteLine("Error {0}", err.Message);
+                throw new ArgumentException(err.Message);
+            }
+            
         }
 
         public void changeRoomRequest (string studentID, string block)
@@ -148,20 +156,36 @@ namespace accommodation_management
 
         public void updateStudentRoomNumber (string bookingID, string wardenID, string studentID, string roomNumber)
         {
-            Utilities utils = new Utilities();
-            string query1 = $"UPDATE students SET roomNumber=(SELECT roomNumber FROM AccommodationInformation WHERE roomNumber='{roomNumber}') WHERE studentID='{studentID}';";
-            string query2 = $"UPDATE AccommodationBooking SET status='completed', wardenID=(SELECT wardenID FROM warden WHERE wardenID='{wardenID}') WHERE bookingID='{bookingID}';";
-            string query3 = $"UPDATE AccommodationInformation SET studentID=(SELECT studentID FROM students WHERE studentID='{studentID}') WHERE roomNumber='{roomNumber}';";
-            utils.SqlQuery(query1 + query2+ query3);
+            try
+            {
+                Utilities utils = new Utilities();
+                string query1 = $"UPDATE students SET roomNumber=(SELECT roomNumber FROM AccommodationInformation WHERE roomNumber='{roomNumber}') WHERE studentID='{studentID}';";
+                string query2 = $"UPDATE AccommodationBooking SET status='completed', wardenID=(SELECT wardenID FROM warden WHERE wardenID='{wardenID}') WHERE bookingID='{bookingID}';";
+                string query3 = $"UPDATE AccommodationInformation SET studentID=(SELECT studentID FROM students WHERE studentID='{studentID}') WHERE roomNumber='{roomNumber}';";
+                utils.SqlQuery(query1 + query2 + query3);
+            } catch (Exception err)
+            {
+                Console.WriteLine("Error {0}", err.Message);
+                throw new ArgumentException(err.Message);
+            }
+
         }
 
         public void terminateStudentAccommodation(string bookingID, string wardenID, string studentID, string roomNumber)
         {
-            Utilities utils = new Utilities();
-            string query1 = $"UPDATE students SET roomNumber=(SELECT roomNumber FROM AccommodationInformation WHERE roomNumber=Null) WHERE studentID='{studentID}';";
-            string query2 = $"UPDATE AccommodationBooking SET status='completed', wardenID=(SELECT wardenID FROM warden WHERE wardenID='{wardenID}') WHERE bookingID='{bookingID}';";
-            string query3 = $"UPDATE AccommodationInformation SET studentID=Null WHERE roomNumber='{roomNumber}';";
-            utils.SqlQuery(query1 + query2 + query3);
+            try
+            {
+                Utilities utils = new Utilities();
+                string query1 = $"UPDATE students SET roomNumber=(SELECT roomNumber FROM AccommodationInformation WHERE roomNumber=Null) WHERE studentID='{studentID}';";
+                string query2 = $"UPDATE AccommodationBooking SET status='completed', wardenID=(SELECT wardenID FROM warden WHERE wardenID='{wardenID}') WHERE bookingID='{bookingID}';";
+                string query3 = $"UPDATE AccommodationInformation SET studentID=Null WHERE roomNumber='{roomNumber}';";
+                utils.SqlQuery(query1 + query2 + query3);
+            } catch (Exception err)
+            {
+                Console.WriteLine("Error {0}", err.Message);
+                throw new ArgumentException(err.Message);
+            }
+            
         }
 
         /**
@@ -169,16 +193,31 @@ namespace accommodation_management
          */
         public SqlDataReader getBookingAndChangeRoomRequests ()
         {
-            Utilities utils = new Utilities();
-            string query = $"SELECT AccommodationBooking.bookingID, AccommodationBooking.studentID, students.fullName, students.roomNumber FROM AccommodationBooking JOIN students ON AccommodationBooking.studentID = students.studentID WHERE AccommodationBooking.status='In progress' AND (AccommodationBooking.type = 'booking' OR AccommodationBooking.type = 'change request'); ";
-            return utils.SqlQuery(query);
+            try
+            {
+                Utilities utils = new Utilities();
+                string query = $"SELECT AccommodationBooking.bookingID, AccommodationBooking.studentID, students.fullName, students.roomNumber FROM AccommodationBooking JOIN students ON AccommodationBooking.studentID = students.studentID WHERE AccommodationBooking.status='In progress' AND (AccommodationBooking.type = 'booking' OR AccommodationBooking.type = 'change request'); ";
+                return utils.SqlQuery(query);
+            } catch (Exception err)
+            {
+                Console.WriteLine("Error {0}", e.Message);
+                throw new ArgumentException(err.Message);
+            }
+
         }
 
         public SqlDataReader getTerminationRequests()
         {
-            Utilities utils = new Utilities();
-            string query = $"SELECT AccommodationBooking.bookingID, AccommodationBooking.studentID, students.fullName, students.roomNumber FROM AccommodationBooking JOIN students ON AccommodationBooking.studentID = students.studentID WHERE AccommodationBooking.status='In progress' AND AccommodationBooking.type = 'termination'; ";
-            return utils.SqlQuery(query);
+            try
+            {
+                Utilities utils = new Utilities();
+                string query = $"SELECT AccommodationBooking.bookingID, AccommodationBooking.studentID, students.fullName, students.roomNumber FROM AccommodationBooking JOIN students ON AccommodationBooking.studentID = students.studentID WHERE AccommodationBooking.status='In progress' AND AccommodationBooking.type = 'termination'; ";
+                return utils.SqlQuery(query);
+            } catch (Exception e)
+            {
+                Console.WriteLine("Error {0}", e.Message);
+                throw new ArgumentException(e.Message);
+            }
         }
     }
 }

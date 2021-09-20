@@ -36,7 +36,7 @@ namespace accommodation_management
             this.feedbacktxt = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.feedback = new System.Windows.Forms.RichTextBox();
+            this.fbComment = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -106,6 +106,7 @@ namespace accommodation_management
             this.button1.TabIndex = 7;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -118,14 +119,14 @@ namespace accommodation_management
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // feedback
+            // fbComment
             // 
-            this.feedback.Location = new System.Drawing.Point(506, 262);
-            this.feedback.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.feedback.Name = "feedback";
-            this.feedback.Size = new System.Drawing.Size(381, 185);
-            this.feedback.TabIndex = 9;
-            this.feedback.Text = "";
+            this.fbComment.Location = new System.Drawing.Point(506, 262);
+            this.fbComment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.fbComment.Name = "fbComment";
+            this.fbComment.Size = new System.Drawing.Size(381, 185);
+            this.fbComment.TabIndex = 9;
+            this.fbComment.Text = "";
             // 
             // label4
             // 
@@ -144,7 +145,7 @@ namespace accommodation_management
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 655);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.feedback);
+            this.Controls.Add(this.fbComment);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.feedbacktxt);
@@ -169,7 +170,7 @@ namespace accommodation_management
         private System.Windows.Forms.Label feedbacktxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox feedback;
+        private System.Windows.Forms.RichTextBox fbComment;
         private System.Windows.Forms.Label label4;
     }
 }
