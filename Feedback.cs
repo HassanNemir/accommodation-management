@@ -12,6 +12,7 @@ namespace accommodation_management
         private string feedbackID;
         private string studentID;
         private string wardenID;
+        private string feedbackComment;
         private DateTime feedbackDate;
         private string subject;
         private string feedback;
@@ -91,10 +92,12 @@ namespace accommodation_management
             return utils.SqlQuery(query);
         }
 
-        public void updateFeedback(string feedbackID, string wardenComment, string wardenID)
+        public void updateFeedback(string feedbackID, string feedbackComment, string wardenID)
         {
+            this.wardenID = wardenID;
+            this.feedbackComment = feedbackComment;
             Utilities utils = new Utilities();
-            string query = $"UPDATE Feedback SET status='completed', feedbackComment='{wardenComment}', wardenID=(SELECT wardenID FROM warden WHERE wardenID='{wardenID}') WHERE feedbackID='{feedbackID}';";
+            string query = $"UPDATE Feedback SET status='completed', feedbackComment='{this.feedbackComment}', wardenID=(SELECT wardenID FROM warden WHERE wardenID='{this.wardenID}') WHERE feedbackID='{feedbackID}';";
             utils.SqlQuery(query);
         }
 
