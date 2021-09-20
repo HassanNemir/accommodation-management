@@ -28,8 +28,8 @@ namespace accommodation_management
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //studentMainMenu returnmenu = new studentMainMenu();
-            //returnmenu.ShowDialog();
+            studentMainMenu returnmenu = new studentMainMenu(st);
+            returnmenu.ShowDialog();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -39,7 +39,13 @@ namespace accommodation_management
          
         private void button1_Click(object sender, EventArgs e)
         {
-            stFeedback = new Feedback(st.StudentID, subject.Text, feedback.Text);
+            if (String.IsNullOrEmpty(feedback.Text) || String.IsNullOrEmpty(subject.Text))
+            {
+                MessageBox.Show("Please enter both Subject and Feedback.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else
+            {
+                stFeedback = new Feedback(st.StudentID, subject.Text, feedback.Text);
+            }
         }
     }
 }
