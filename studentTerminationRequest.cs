@@ -12,7 +12,7 @@ namespace accommodation_management
 {
     public partial class studentTerminationRequest : Form
     {
-        public studentTerminationRequest()
+        public studentTerminationRequest(Object obj)
         {
             InitializeComponent();
         }

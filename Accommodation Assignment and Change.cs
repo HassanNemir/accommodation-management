@@ -16,17 +16,21 @@ namespace accommodation_management
     {
         AccommodationBooking accBooking;
         List<AccommodationBooking> bookings = new List<AccommodationBooking>();
+        Warden wr;
+        Object obj;
         string selectedStudentID;
         string selectedBookingID;
-        public Accommodation_Assignment_and_Change()
+        public Accommodation_Assignment_and_Change(Object oj)
         {
             InitializeComponent();
+            obj = oj;
+            wr = (Warden)oj;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            wardenMainMenu returnmenu = new wardenMainMenu();
+            wardenMainMenu returnmenu = new wardenMainMenu(obj);
             returnmenu.ShowDialog();
         }
 

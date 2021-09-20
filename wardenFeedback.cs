@@ -17,9 +17,11 @@ namespace accommodation_management
         List<Feedback> feedbacks = new List<Feedback>();
         string selectedStudentID;
         string selectedFeedbackID;
-        public wardenFeedback()
+        Warden wr;
+        public wardenFeedback(Object oj)
         {
             InitializeComponent();
+            wr = (Warden)oj;
         }
 
         private void label4_Click(object sender, EventArgs e)

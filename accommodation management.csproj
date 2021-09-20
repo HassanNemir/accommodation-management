@@ -110,6 +110,7 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="Warden.cs" />
     <Compile Include="wardenFeedback.cs">
       <SubType>Form</SubType>
     </Compile>

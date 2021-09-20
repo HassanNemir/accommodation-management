@@ -13,7 +13,7 @@ namespace accommodation_management
     public partial class studentRoomChangeRequest : Form
     {
         string selectedText;
-        public studentRoomChangeRequest()
+        public studentRoomChangeRequest(Object obj)
         {
             InitializeComponent();
         }

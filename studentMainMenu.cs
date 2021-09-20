@@ -12,11 +12,11 @@ namespace accommodation_management
 {
     public partial class studentMainMenu : Form
     {
-        Student st;
+        Object oj;
         public studentMainMenu(Object obj)
         {
             InitializeComponent();
-            st = (Student)obj;
+            oj = obj;
         }
 
         private void studentMainMenu_Load(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace accommodation_management
         {
 
             this.Hide();
-            studentAccommodationRequest accommodationreq = new studentAccommodationRequest();
+            studentAccommodationRequest accommodationreq = new studentAccommodationRequest(oj);
             accommodationreq.ShowDialog();
         }
 
@@ -46,21 +46,21 @@ namespace accommodation_management
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentRoomChangeRequest accommodationchg = new studentRoomChangeRequest();
+            studentRoomChangeRequest accommodationchg = new studentRoomChangeRequest(oj);
             accommodationchg.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentTerminationRequest accommodationterminate = new studentTerminationRequest();
+            studentTerminationRequest accommodationterminate = new studentTerminationRequest(oj);
             accommodationterminate.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentFeedback studentFeedback = new studentFeedback();
+            studentFeedback studentFeedback = new studentFeedback(oj);
             studentFeedback.ShowDialog();
         }
     }
