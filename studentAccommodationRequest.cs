@@ -38,8 +38,8 @@ namespace accommodation_management
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            // studentMainMenu returnmenu = new studentMainMenu();
-            //return menu.ShowDialog();
+            studentMainMenu returnmenu = new studentMainMenu(st);
+            returnmenu.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
