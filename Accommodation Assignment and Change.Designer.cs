@@ -225,6 +225,7 @@ namespace accommodation_management
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Accommodation_Assignment_and_Change";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Warden | Change and assign accommodation";
             this.Load += new System.EventHandler(this.Accommodation_Assignment_and_Change_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
