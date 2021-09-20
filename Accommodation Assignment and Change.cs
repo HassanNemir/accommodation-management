@@ -59,10 +59,11 @@ namespace accommodation_management
                     string bookingID = (string)dr["bookingID"];
                     string studentID = (string)dr["studentID"];
                     string studentFullName = (string)dr["fullName"];
+                    string block = (string)dr["block"];
                     string roomNumber = dr["roomNumber"] == DBNull.Value ? String.Empty : (string)dr["roomNumber"] ;
                    
 
-                    AccommodationBooking b = new AccommodationBooking(bookingID, studentID, studentFullName, roomNumber);
+                    AccommodationBooking b = new AccommodationBooking(bookingID, studentID, studentFullName, roomNumber, block);
                     bookings.Add(b);
                     b = null;
 
@@ -71,14 +72,14 @@ namespace accommodation_management
                     string bookingID2 = (string)dr["bookingID"];
                     string studentID2 = (string)dr["studentID"];
                     string studentFullName2 = (string)dr["fullName"];
+                    string block2 = (string)dr["block"];
                     string roomNumber2 = dr["roomNumber"] == DBNull.Value ? String.Empty : (string)dr["roomNumber"];
 
 
-                    AccommodationBooking b2 = new AccommodationBooking(bookingID2, studentID2, studentFullName2, roomNumber2);
+                    AccommodationBooking b2 = new AccommodationBooking(bookingID2, studentID2, studentFullName2, roomNumber2, block2);
                     bookings.Add(b2);
                     b2 = null;
                 }
-                
             }
 
             foreach(AccommodationBooking booking in bookings)
@@ -101,11 +102,17 @@ namespace accommodation_management
                 {
                     AccommodationBooking booking = new AccommodationBooking();
                     booking.updateStudentRoomNumber(selectedBookingID, wr.WardenID, selectedStudentID, roomNumber.Text);
+                    MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 } catch (Exception err)
                 {
                     MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

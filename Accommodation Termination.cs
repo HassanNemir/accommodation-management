@@ -43,9 +43,10 @@ namespace accommodation_management
                     string bookingID = (string)dr["bookingID"];
                     string studentID = (string)dr["studentID"];
                     string studentFullName = (string)dr["fullName"];
+                    string block = (string)dr["block"];
                     string roomNumber = dr["roomNumber"] == DBNull.Value ? String.Empty : (string)dr["roomNumber"];
 
-                    AccommodationBooking b = new AccommodationBooking(bookingID, studentID, studentFullName, roomNumber);
+                    AccommodationBooking b = new AccommodationBooking(bookingID, studentID, studentFullName, roomNumber, block);
                     bookings.Add(b);
                     b = null;
                 
@@ -75,6 +76,7 @@ namespace accommodation_management
         {
             AccommodationBooking booking = new AccommodationBooking();
             booking.terminateStudentAccommodation(selectedBookingID, wr.WardenID, selectedStudentID, roomNumber.Text);
+            MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

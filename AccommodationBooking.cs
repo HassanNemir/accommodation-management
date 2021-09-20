@@ -52,12 +52,13 @@ namespace accommodation_management
 
         }
 
-        public AccommodationBooking(string bookingID, string studentID, string studentFullName, string studentRoomNumber)
+        public AccommodationBooking(string bookingID, string studentID, string studentFullName, string studentRoomNumber, string block)
         {
             this.bookingID = bookingID;
             this.studentID = studentID;
             this.studentFullName = studentFullName;
             this.studentRoomNumber = studentRoomNumber;
+            this.block = block;
         }
 
         public AccommodationBooking (string studentID, DateTime startDate, DateTime endDate, string block)
@@ -151,7 +152,7 @@ namespace accommodation_management
             {
                 Utilities ut = new Utilities();
                 //validate that the room exists and has no students assigned
-                SqlDataReader dr =  ut.SqlQuery($"SELECT roomNumber, studentID FROM AccommodationInformation WHERE roomNumber={roomNumber}");
+                SqlDataReader dr =  ut.SqlQuery($"SELECT roomNumber, studentID FROM AccommodationInformation WHERE roomNumber='{roomNumber}'");
                 if(!dr.HasRows)
                 {
                     throw new ArgumentException("Room number is invalid");
@@ -201,7 +202,7 @@ namespace accommodation_management
             try
             {
                 Utilities utils = new Utilities();
-                string query = $"SELECT AccommodationBooking.bookingID, AccommodationBooking.studentID, students.fullName, students.roomNumber FROM AccommodationBooking JOIN students ON AccommodationBooking.studentID = students.studentID WHERE AccommodationBooking.status='In progress' AND (AccommodationBooking.type = 'booking' OR AccommodationBooking.type = 'change request'); ";
+                string query = $"SELECT AccommodationBooking.bookingID, AccommodationBooking.studentID, students.fullName, students.roomNumber, AccommodationBooking.block FROM AccommodationBooking JOIN students ON AccommodationBooking.studentID = students.studentID WHERE AccommodationBooking.status='In progress' AND (AccommodationBooking.type = 'booking' OR AccommodationBooking.type = 'change request'); ";
                 return utils.SqlQuery(query);
             } catch (Exception err)
             {

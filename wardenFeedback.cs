@@ -67,7 +67,7 @@ namespace accommodation_management
 
             foreach (Feedback fb in feedbacks)
             {
-                studentIDList.Items.Add($"Subject: {fb.Subject} | Student ID: {fb.stID}");
+                studentIDList.Items.Add(fb.stID);
             }
         }
 
@@ -90,7 +90,8 @@ namespace accommodation_management
         private void button1_Click(object sender, EventArgs e)
         {
             Feedback feedback = new Feedback();
-            feedback.updateFeedback(selectedFeedbackID, fbComment.Text, "ttestWr1");
+            feedback.updateFeedback(selectedFeedbackID, fbComment.Text, wr.WardenID);
+            MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -45,6 +45,7 @@ namespace accommodation_management
             } else
             {
                 stFeedback = new Feedback(st.StudentID, subject.Text, feedback.Text);
+                MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
