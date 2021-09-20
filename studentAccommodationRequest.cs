@@ -42,20 +42,24 @@ namespace accommodation_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if (String.IsNullOrEmpty(block.Text))
             {
-                studentBooking = new AccommodationBooking(st.StudentID, startDate.Value, endDate.Value, block.Text);
-                MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                //studentMainMenu mainmenu = new studentMainMenu();
-                //mainmenu.ShowDialog();
-            } 
-            catch (Exception err)
+                MessageBox.Show("Please select an accommodation block.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else
             {
-                MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                try
+                {
+                    studentBooking = new AccommodationBooking(st.StudentID, startDate.Value, endDate.Value, block.Text);
+                    MessageBox.Show("You have submitted your request", "Request Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    studentMainMenu mainmenu = new studentMainMenu(st);
+                    mainmenu.ShowDialog();
+                } 
+                catch (Exception err)
+                {
+                    MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            // @TODO add a confirmation message on submission
-            // @TODO add validations
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -69,6 +73,11 @@ namespace accommodation_management
         }
 
         private void studentAccommodationRequest_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
